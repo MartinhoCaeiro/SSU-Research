@@ -1,0 +1,201 @@
+\documentclass[a4paper]{article}
+% Pacotes necessários
+\usepackage[portuguese]{babel}
+\usepackage[backend=biber, style=apa, citestyle=apa, language=portuguese]{biblatex}
+\usepackage{csquotes}
+\addbibresource{Recursos/referencias.bib}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{siunitx} % Required for alignment
+\sisetup{
+  round-mode          = places, % Rounds numbers
+  round-precision     = 2, % to 2 places
+}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{karnaugh-map}
+\usepackage[section]{placeins}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{titling}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{array}
+\usepackage{soul}
+\usepackage{afterpage}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\onehalfspacing
+
+
+% Comando para criar uma página vazia
+\newcommand\myemptypage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage
+}
+
+% Página de título principal
+\newcommand{\firsttitlepage}{
+    \begin{titlepage}
+        \centering
+        \vspace*{1cm}
+        
+        % Logos superior
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=6cm]{Recursos/LOGO_IPB} % Substitua pelo caminho da imagem
+            \vspace{0.5cm}
+        \end{figure}
+
+        % Informações da instituição
+        \large\textbf{INSTITUTO POLITÉCNICO DE BEJA} \\
+        \large\textbf{Escola Superior de Tecnologia e Gestão} \\
+        \large\textbf{Mestrado em Engenharia de Segurança Informática} \\
+        \large\textbf{Segurança no Software e Usabilidade} \\
+        
+        \vspace{2cm}
+        
+        % Título do projeto
+        {\Huge \textbf{Vaulted Pay™}} \\
+        
+        \vspace{1.5cm}
+        
+        % Autores
+        \large Martinho José Novo Caeiro - 23917 \\
+        \large Paulo António Tavares Abade - 23919 \\
+        \large Rafael Conceição Narcio - 24473 \\
+        
+        \vfill
+        
+        % Logo inferior
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=6cm]{Recursos/IPBejaESTIG.jpg} % Substitua pelo caminho da imagem
+        \end{figure}
+        
+        \vspace{1cm}
+        
+        % Local e data
+        {\large Beja, junho de 2026}
+    \end{titlepage}
+}
+
+\newcommand{\secondtitlepage}{
+    \begin{titlepage}
+        \centering
+        \vspace*{1cm}
+        
+        % Informações da instituição
+        \large\textbf{INSTITUTO POLITÉCNICO DE BEJA} \\
+        \large\textbf{Escola Superior de Tecnologia e Gestão} \\
+        \large\textbf{Mestrado em Engenharia de Segurança Informática} \\
+        \large\textbf{Segurança no Software e Usabilidade} \\
+        
+        \vspace{2cm}
+        
+        % Título do projeto
+        {\Huge \textbf{Vaulted Pay™}} \\
+        
+        \vspace{1.5cm}
+        
+        % Autores
+        \large Martinho José Novo Caeiro - 23917 \\
+        \large Paulo António Tavares Abade - 23919 \\
+        \large Rafael Conceição Narcio - 24473 \\
+        \vspace{2cm}
+
+        % Orientador
+        \large Orientadores: \\
+        \large Luís Felipe Nobre Horta Batista \\
+        \large Luís Carlos da Silva Bruno \\
+        
+        \vfill
+        
+        % Local e data
+        {\large Beja, junho de 2026}
+    \end{titlepage}
+}
+
+\begin{document}
+
+
+\pagenumbering{gobble} % Oculta numeração da página
+
+% Primeira página de título
+\firsttitlepage
+
+\secondtitlepage
+
+
+% Abstract
+\section*{\LARGE\textbf{\textit{Resumo}}}
+
+Lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\vspace{1cm}
+% Keywords
+\textbf{Keywords:} Lore ipsum dolor sit amet, consectetur adipiscing elit.
+\newpage
+%--------------------------------------------------------------------------------------------------------------------------------------
+
+\section*{\LARGE\textbf{\textit{Abstract}}}
+
+Lore ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+
+\vspace{1cm}
+% Keywords
+\textbf{Keywords:} Lore ipsum dolor sit amet, consectetur adipiscing elit.
+\renewcommand{\contentsname}{Índice}       % Título do sumário
+\renewcommand{\listfigurename}{Índice de Figuras} % Título da lista de figuras
+
+% Início do conteúdo do relatório
+\newpage
+\doublespacing
+\tableofcontents
+\listoffigures
+\doublespacing
+
+\newpage
+\pagenumbering{arabic}
+
+\section{Introdução}\label{introducao}
+
+\section{Revisão Bibliográfica}
+
+\section{Análise do Sistema}
+\subsection{As 11 Questões Fundamentais da Análise de Tarefas}
+\subsection{Caracterização dos Utilizadores}
+\subsection{Cenários de Utilização}
+\subsection{Análise de Tarefas}
+\section{Desenho do Sistema}
+\subsection{Interfaces dos Equipamentos Físicos e Ecrãs}
+\subsection{Diagramas de Navegação}
+\subsection{Princípios e Regras de Usabilidade}
+\subsection{Avaliação Exploratória}
+\section{Implementação e Avaliação do Protótipo}
+\subsection{Implementação do Protótipo}
+\subsection{Avaliação do Protótipo}
+
+
+%---------------------------------------------------------------------------------------------------------------------------
+\section{Conclusão}\label{conclusao}
+
+
+\newpage 
+\renewcommand{\refname}{Bibliografia} % Para artigos
+\renewcommand{\bibname}{Bibliografia} % Para livros e relatórios
+\addcontentsline{toc}{section}{Bibliografia} % Adiciona a Bibliografia ao índice
+\printbibliography
+
+\end{document}
