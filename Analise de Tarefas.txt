@@ -1,0 +1,32 @@
+1. Quem vai utilizar o sistema?
+Todas as pessoas com pouca experiência em informática como pessoas idosas, entre outros.
+
+2. Que tarefas executam atualmente?
+Não aplicavel, pois o sistema é novo e não tem utilizadores.
+
+3. Que tarefas são desejáveis?
+Pagamento de contas, compras online, entre outros.
+
+4. Como se aprendem as tarefas?
+Com o uso do sistema e com ajuda de tutoriais.
+
+5. Onde são desempenhadas as tarefas?
+No dispositivo do utilizador, seja ele um computador, tablet ou smartphone.
+
+6. Qual a relação entre o utilizador e a informação?
+O utilizador tem acesso à informação através do sistema.
+
+7. Que outros instrumentos tem o utilizador?
+Tem acesso à internet, a um teclado e a um rato, ou a um ecrã tátil, dependendo do dispositivo que estiver a usar.
+
+8. Como comunicam os utilizadores entre si?
+Não aplicável, pois o sistema é individual e não tem funcionalidades de comunicação entre utilizadores.
+
+9. Qual a frequência de desempenho das tarefas?
+Depende do utilizador, mas o sistema deve ser projetado para ser utilizado diariamente.
+
+10. Quais as restrições de tempo impostas?
+Nenhuma restrição de tempo específica.
+
+11. Que acontece se algo correr mal?
+O sistema deve ser capaz de mostrar um ecrã de erro, ou seja, um ecrã que mostre o que aconteceu.
