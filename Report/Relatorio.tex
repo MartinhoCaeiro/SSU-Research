@@ -177,6 +177,10 @@ utilizadores, serão descritos os cenários de utilização e será feita a aná
 feito o desenho do sistema, onde serão desenhadas as interfaces dos equipamentos físicos e ecrãs, serão 
 desenhados os diagramas de navegação, serão descritos os princípios e regras de usabilidade e será 
 feita a avaliação exploratória. Por fim, será feita a implementação do protótipo e a avaliação do protótipo.
+
+No entanto, apesar de ser pensado para um sistema de pagamento, será focado na questão de autenticação e como deixá-la segura e acessível. As outras 
+tarefas serão apenas descritas, mas não serão implementadas, pois o foco do projeto é a autenticação, e as outras tarefas são apenas para 
+dar contexto ao projeto.
 \section{Revisão Bibliográfica}
 A revisão bibliográfica será feita com base em três artigos científicos, e cada artigo será analisado e resumido por cada um dos membros do grupo, 
 e depois será feita uma comparação entre os três artigos para saber quais ideais irão ser utilizados neste projeto.
@@ -231,19 +235,32 @@ presencialmente sem precisar de usar dinheiro ou de ter a carteira sempre consig
 A persona experiente, chamada Carlos, tem 40 anos, é muito familiarizado com a tecnologia e consciente 
 dos seus dados pessoais. Ele quer soluções para facilitar a sua vida, sem ter que fazer deslocações desnecessárias, mas 
 tem preocupações com a segurança dos seus dados pessoais e com a privacidade.
+
 \subsection{Cenários de Utilização}
 Cenário 1: Utilizador idoso a pagar uma conta online
 O utilizador idoso, chamado João, tem 70 anos e pouca experiência em informática.
-Ele quer pagar a sua conta de eletricidade online, mas não tem tempo para ir à cidade.
+Ele quer pagar a sua conta de eletricidade online, mas não tem tempo para ir à cidade e quer garantir
+que o processo seja simples e seguro para evitar cometer erros mas impedir outras pessoas de acederem à sua conta 
+e roubarem o seu dinheiro.
 
 Cenário 2: Utilizador jovem a fazer compra num café
 A utilizadora jovem, chamada Ana, tem 25 anos e é muito familiarizada com a tecnologia.
-Ela quer comprar um café usando o seu smartphone, mas não tem dinheiro suficiente para pagar em dinheiro.
+Ela quer comprar um café usando o seu smartphone, mas não tem dinheiro suficiente para pagar em dinheiro. Ela quer 
+uma maneira rápida e segura utilizar a aplicação sem se preocupar com passwords.
 
 Cenário 3: Utilizador experiente a usar o sistema para fazer uma transferência bancária
 O utilizador experiente, chamado Carlos, tem 40 anos, é muito familiarizado com a tecnologia e consciente dos seus dados pessoais.
-Ele quer fazer uma transferência bancária online, mas não tem tempo para ir ao banco.
+Ele quer fazer uma transferência bancária online, mas não tem tempo para ir ao banco. Ele quer uma maneira de se proteger, sem 
+ter que se preocupar com pessoas a acederem à sua conta e roubarem o seu dinheiro.
+
 \subsection{Análise de Tarefas}
+Nesta secção será feita a análise de tarefas, mais propriamente a maneira de como é feita a autenticação, que é a tarefa mais 
+importante do sistema, pois é a tarefa que garante a segurança do sistema e dos dados dos utilizadores.
+
+\subsection{Primeira Versão: Autenticação por Password com Teclado Embaralhado}
+\subsection{Segunda Versão: Autenticação por Código e MAC Address}
+\subsection{Terceira Versão: Autenticação por Username e 2FA com aplicação móvel}
+
 \section{Desenho do Sistema}
 \subsection{Interfaces dos Equipamentos Físicos e Ecrãs}
 \subsection{Diagramas de Navegação}

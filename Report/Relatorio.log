@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.7)  19 MAR 2026 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.7)  25 MAR 2026 19:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -979,12 +979,12 @@ Package hyperref Info: Link coloring OFF on input line 126.
 \@outlinefile=\write5
 \openout5 = `Relatorio.out'.
 
-<Recursos/LOGO_IPB.png, id=70, 646.415pt x 499.8675pt>
+<Recursos/LOGO_IPB.png, id=82, 646.415pt x 499.8675pt>
 File: Recursos/LOGO_IPB.png Graphic file (type png)
 <use Recursos/LOGO_IPB.png>
 Package pdftex.def Info: Recursos/LOGO_IPB.png  used on input line 132.
 (pdftex.def)             Requested size: 170.71652pt x 132.01424pt.
-<Recursos/IPBejaESTIG.jpg, id=71, 501.875pt x 301.125pt>
+<Recursos/IPBejaESTIG.jpg, id=83, 501.875pt x 301.125pt>
 File: Recursos/IPBejaESTIG.jpg Graphic file (type jpg)
 <use Recursos/IPBejaESTIG.jpg>
 Package pdftex.def Info: Recursos/IPBejaESTIG.jpg  used on input line 132.
@@ -1047,7 +1047,7 @@ l.168 \newpage
 
 [4]
 
-LaTeX Warning: Empty bibliography on input line 265.
+LaTeX Warning: Empty bibliography on input line 282.
 
 (Relatorio.aux)
  ***********
@@ -1055,23 +1055,23 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
 Package rerunfilecheck Info: File `Relatorio.out' has not changed.
-(rerunfilecheck)             Checksum: 4BA7613C913B8CCBBC890EF46772F2B4;3063.
+(rerunfilecheck)             Checksum: 0C49303D113EB541ACD0834AEECACDDD;4280.
 Package logreq Info: Writing requests to 'Relatorio.run.xml'.
 \openout1 = `Relatorio.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36512 strings out of 469941
- 734193 string characters out of 5469431
- 1592990 words of memory out of 5000000
- 62796 multiletter control sequences out of 15000+600000
+ 36518 strings out of 469941
+ 734283 string characters out of 5469431
+ 1593990 words of memory out of 5000000
+ 62799 multiletter control sequences out of 15000+600000
  636822 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,6n,105p,823b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\amant\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\amant\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\amant\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\amant\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1728.pk> <C:\Users\amant\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\amant\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2488.pk> <C:\Users\amant\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\amant\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk>
-Output written on Relatorio.pdf (9 pages, 205837 bytes).
+Output written on Relatorio.pdf (9 pages, 212288 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 464 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 175 words of extra memory for PDF output out of 10000 (max. 10000000)
 
