@@ -7,7 +7,7 @@ Aplicação: Ele utiliza o PIN Baralhado. Como os números mudam de posição a 
 
 
 2. Persona 2: Dona Maria (A Utilizadora Sénior)
-Perfil: 72 anos, reformada, excelente memória visual mas dificuldade com números abstratos.
+Perfil: 72 anos, reformada.
 
 Cenário: A Dona Maria quer desbloquear o telemóvel para mostrar fotos aos amigos, mas tem dificuldades visuais.
 
@@ -19,4 +19,5 @@ Perfil: 21 anos, estudante de engenharia, está sempre em movimento e adora novo
 
 Cenário: O Tiago está a correr para a faculdade com uma mochila pesada e precisa de validar o seu bilhete digital enquanto caminha rapidamente entre a multidão.
 
-Aplicação: Ele utiliza o PIN Forma Cadeado Baralhado. É o método de segurança máxima: exige que ele rode o cadeado, mas os números estão em posições aleatórias, garantindo que ninguém — nem mesmo uma câmara de vigilância — consiga decifrar o seu código.
+Aplicação: Ele utiliza o PIN Forma Cadeado Baralhado. É o método de segurança máxima: exige que ele rode o cadeado, mas os números estão em posições aleatórias, garantindo que ninguém consiga decifrar o seu código, 
+se não estiver perto o suficiente para ser notado.

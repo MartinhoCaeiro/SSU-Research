@@ -1,11 +1,10 @@
 0. Pre-Configuração 0: Configuração Inicial do Método de PIN
 O utilizador define como quer proteger a aplicação.
+Sub-Configuração 0.1: Definir o PIN numérico.
 
-Sub-Configuração 0.1: Escolher o tipo de PIN (Normal, Baralhado, Forma Cadeado, ou Forma Cadeado Baralhado).
+Sub-Configuração 0.2: Confirmar o PIN para evitar erros de digitação.
 
-Sub-Configuração 0.2: Definir o PIN numérico.
-
-Sub-Configuração 0.3: Confirmar o PIN para evitar erros de digitação.
+Sub-Configuração 0.3: Escolher o tipo de PIN (Normal, Baralhado, Forma Cadeado, ou Forma Cadeado Baralhado).
 
 Sub-Configuração 0.4: Visualizar um breve tutorial animado sobre como o método escolhido funciona (especialmente para os métodos baralhados).
 
