@@ -1,0 +1,22 @@
+0. Pre-Configuração 0: Configuração Inicial do Método de PIN
+O utilizador define como quer proteger a aplicação.
+
+Sub-Configuração 0.1: Escolher o tipo de PIN (Normal, Baralhado, Forma Cadeado, ou Forma Cadeado Baralhado).
+
+Sub-Configuração 0.2: Definir o PIN numérico.
+
+Sub-Configuração 0.3: Confirmar o PIN para evitar erros de digitação.
+
+Sub-Configuração 0.4: Visualizar um breve tutorial animado sobre como o método escolhido funciona (especialmente para os métodos baralhados).
+
+
+1. Tarefa 1: Processo de Autenticação (Acesso à Aplicação)
+A tarefa principal realizada no dia a dia.
+
+Sub-tarefa 1.1: Ativar o ecrã de desbloqueio (abrir a app ou ligar o ecrã).
+
+Sub-tarefa 1.2: Observar a disposição do teclado (identificar se os números estão na posição padrão ou baralhados).
+
+Sub-tarefa 1.3: Introduzir os dígitos ou rodar a "forma de cadeado" de acordo com a lógica do método ativo.
+
+Sub-tarefa 1.4: Submeter a tentativa de acesso (pode ser automático ao atingir o número de dígitos ou via botão "OK").

@@ -1,32 +1,51 @@
 1. Quem vai utilizar o sistema?
-Todas as pessoas com pouca experiência em informática como pessoas idosas, entre outros.
+Utilizadores de smartphones que procuram maior privacidade e segurança. 
+O público abrange desde utilizadores tecnologicamente avançados até pessoas 
+com diferentes capacidades cognitivas ou idosas.
 
 2. Que tarefas executam atualmente?
-Não aplicavel, pois o sistema é novo e não tem utilizadores.
+Atualmente, os utilizadores realizam o desbloqueio de dispositivos e 
+aplicações através de métodos biométricos (impressão digital, reconhecimento facial) 
+ou métodos convencionais de introdução de PIN fixo e senhas alfanuméricas.
 
 3. Que tarefas são desejáveis?
-Pagamento de contas, compras online, entre outros.
+É desejável garantir uma autenticação robusta que proteja dados sensíveis 
+(bancários, saúde, mensagens privadas) contra observadores externos, 
+mantendo a facilidade de memorização e a rapidez no acesso através de métodos visuais e dinâmicos.
 
 4. Como se aprendem as tarefas?
-Com o uso do sistema e com ajuda de tutoriais.
+A aprendizagem ocorre através da experimentação direta com a interface (intuitividade), 
+apoiada por um tutorial inicial rápido (onboarding) que explica a lógica dos novos métodos.
 
 5. Onde são desempenhadas as tarefas?
-No dispositivo do utilizador, seja ele um computador, tablet ou smartphone.
+Principalmente em ambientes móveis e, frequentemente, em espaços públicos ou semi-públicos 
+(transportes, cafés, filas de espera), onde a visibilidade do ecrã por terceiros é um risco real.
 
 6. Qual a relação entre o utilizador e a informação?
-O utilizador tem acesso à informação através do sistema.
+O utilizador é o proprietário e único detentor do direito de acesso à informação. 
+O sistema atua como o guarda de segurança (gatekeeper) que valida a identidade do utilizador antes 
+de libertar o acesso aos dados pessoais.
 
 7. Que outros instrumentos tem o utilizador?
-Tem acesso à internet, a um teclado e a um rato, ou a um ecrã tátil, dependendo do dispositivo que estiver a usar.
+O utilizador utiliza o ecrã tátil do smartphone como interface principal e a sua memória (visual e motora). 
+Em alguns casos, pode utilizar acessórios como canetas para ecrãs táteis (stylus) ou funcionalidades de 
+acessibilidade do sistema operativo.
 
 8. Como comunicam os utilizadores entre si?
-Não aplicável, pois o sistema é individual e não tem funcionalidades de comunicação entre utilizadores.
+Não se aplica diretamente, pois a autenticação é uma tarefa individual e privada. 
+No entanto, o sistema deve prevenir que a observação da comunicação visual (o ato de digitar) 
+permita que outra pessoa descubra a senha.
 
 9. Qual a frequência de desempenho das tarefas?
-Depende do utilizador, mas o sistema deve ser projetado para ser utilizado diariamente.
+Alta frequência. O sistema deve ser projetado para uso diário e recorrente, sendo ativado múltiplas vezes ao longo do dia, 
+sempre que a aplicação ou o dispositivo é bloqueado.
 
 10. Quais as restrições de tempo impostas?
-Nenhuma restrição de tempo específica.
+A autenticação deve ser rápida para não gerar frustração (idealmente menos de 30 segundos). 
+Existem também restrições de segurança: após um determinado número de tentativas falhadas, 
+o sistema deve impor um tempo de espera obrigatório para evitar ataques de força bruta.
 
 11. Que acontece se algo correr mal?
-O sistema deve ser capaz de mostrar um ecrã de erro, ou seja, um ecrã que mostre o que aconteceu.
+O sistema deve fornecer feedback imediato e claro (ex: "PIN Incorreto"). No caso de múltiplas falhas, 
+deve oferecer métodos de recuperação de conta (como e-mail de recuperação ou código mestre) 
+e registar a tentativa de acesso indevido para aviso posterior ao utilizador.

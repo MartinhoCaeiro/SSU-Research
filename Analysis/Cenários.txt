@@ -1,11 +1,22 @@
-1. Cenário 1: Utilizador idoso a pagar uma conta online
-O utilizador idoso, chamado João, tem 70 anos e pouca experiência em informática.
-Ele quer pagar a sua conta de eletricidade online, mas não tem tempo para ir à cidade.
+1. Persona 1: Ricardo (O Analista Urbano)
+Perfil: 28 anos, tecnológico, vive em Lisboa e usa transportes públicos.
 
-2. Cenário 2: Utilizador jovem a fazer compra num café
-A utilizadora jovem, chamada Ana, tem 25 anos e é muito familiarizada com a tecnologia.
-Ela quer comprar um café usando o seu smartphone, mas não tem dinheiro suficiente para pagar em dinheiro.
+Cenário: O Ricardo está num metro lotado e precisa de consultar o saldo bancário. Ele teme que alguém ao seu lado memorize o seu PIN.
 
-3. Cenário 3: Utilizador experiente a usar o sistema para fazer uma transferência bancária
-O utilizador experiente, chamado Carlos, tem 40 anos, é muito familiarizado com a tecnologia e consciente dos seus dados pessoais.
-Ele quer fazer uma transferência bancária online, mas não tem tempo para ir ao banco.
+Aplicação: Ele utiliza o PIN Baralhado. Como os números mudam de posição a cada acesso, mesmo que alguém observe o movimento dos seus dedos, não conseguirá replicar a senha.
+
+
+2. Persona 2: Dona Maria (A Utilizadora Sénior)
+Perfil: 72 anos, reformada, excelente memória visual mas dificuldade com números abstratos.
+
+Cenário: A Dona Maria quer desbloquear o telemóvel para mostrar fotos aos amigos, mas tem dificuldades visuais.
+
+Aplicação: Ela utiliza o PIN em Forma de Cadeado. Ao rodar o número de vezes necessárias a partir do ponto 0, ela usa a memória gestual, tornando o acesso muito mais intuitivo e menos stressante.
+
+
+3. Persona 3: Tiago (O Estudante Dinâmico)
+Perfil: 21 anos, estudante de engenharia, está sempre em movimento e adora novos desafios de segurança.
+
+Cenário: O Tiago está a correr para a faculdade com uma mochila pesada e precisa de validar o seu bilhete digital enquanto caminha rapidamente entre a multidão.
+
+Aplicação: Ele utiliza o PIN Forma Cadeado Baralhado. É o método de segurança máxima: exige que ele rode o cadeado, mas os números estão em posições aleatórias, garantindo que ninguém — nem mesmo uma câmara de vigilância — consiga decifrar o seu código.
