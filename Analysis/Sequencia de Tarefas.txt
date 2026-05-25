@@ -6,8 +6,6 @@ Sub-Configuração 0.2: Confirmar o PIN para evitar erros de digitação.
 
 Sub-Configuração 0.3: Escolher o tipo de PIN (Normal, Baralhado, Forma Cadeado, ou Forma Cadeado Baralhado).
 
-Sub-Configuração 0.4: Visualizar um breve tutorial animado sobre como o método escolhido funciona (especialmente para os métodos baralhados).
-
 
 1. Tarefa 1: Processo de Autenticação (Acesso à Aplicação)
 A tarefa principal realizada no dia a dia.

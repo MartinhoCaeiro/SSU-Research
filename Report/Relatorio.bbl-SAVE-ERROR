@@ -19,416 +19,206 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
-    \entry{geolite2}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c3af69d127d4446096caecf31afe4995}{%
-           family={MaxMind},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{c3af69d127d4446096caecf31afe4995}
-      \strng{fullhash}{c3af69d127d4446096caecf31afe4995}
-      \strng{fullhashraw}{c3af69d127d4446096caecf31afe4995}
-      \strng{bibnamehash}{c3af69d127d4446096caecf31afe4995}
-      \strng{authorbibnamehash}{c3af69d127d4446096caecf31afe4995}
-      \strng{authornamehash}{c3af69d127d4446096caecf31afe4995}
-      \strng{authorfullhash}{c3af69d127d4446096caecf31afe4995}
-      \strng{authorfullhashraw}{c3af69d127d4446096caecf31afe4995}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Base de dados de geolocalização gratuita}
-      \field{title}{GeoLite2 Free Geolocation Data}
-      \field{urlday}{7}
-      \field{urlmonth}{2}
-      \field{urlyear}{2026}
-      \field{year}{2025}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dev.maxmind.com/geoip/geolite2-free-geolocation-data
-      \endverb
-      \verb{url}
-      \verb https://dev.maxmind.com/geoip/geolite2-free-geolocation-data
-      \endverb
-    \endentry
-    \entry{Nmap}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1786dd533a3e567bfec5478a524f9361}{%
-           family={Team},
-           familyi={T\bibinitperiod},
-           given={Nmap},
-           giveni={N\bibinitperiod},
+    \entry{roth2004pin}{online}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3197334999b3b592056a5406aba8b9a3}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f55c0d01161606926174e465ca052de}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1903988cca477a5416dd1298fdd5151c}{%
+           family={Freidinger},
+           familyi={F\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{fullhash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{fullhashraw}{1786dd533a3e567bfec5478a524f9361}
-      \strng{bibnamehash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{authorbibnamehash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{authornamehash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{authorfullhash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{authorfullhashraw}{1786dd533a3e567bfec5478a524f9361}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \strng{namehash}{7aaf9aea6acf850084520cc833487643}
+      \strng{fullhash}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{fullhashraw}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{bibnamehash}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{authorbibnamehash}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{authornamehash}{7aaf9aea6acf850084520cc833487643}
+      \strng{authorfullhash}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{authorfullhashraw}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Ferramenta de varredura de rede}
-      \field{title}{Nmap: Network Mapper}
-      \field{urlday}{7}
-      \field{urlmonth}{2}
+      \field{note}{Artigo sobre método de entrada de PIN resistente a observação}
+      \field{title}{A PIN-entry method resilient against shoulder surfing}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
       \field{urlyear}{2026}
-      \field{year}{2025}
+      \field{year}{2004}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://nmap.org/
+      \verb https://dl.acm.org/doi/10.1145/1030083.1030116
       \endverb
       \verb{url}
-      \verb https://nmap.org/
+      \verb https://dl.acm.org/doi/10.1145/1030083.1030116
       \endverb
     \endentry
-    \entry{dos}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+    \entry{rotary2009}{online}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d6c478114426bbff7733748b4587eb76}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Peipei},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0b04522929f226609fbbd2194bec9c1}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5233e9e59d910ef18a1ac737abe71113}{%
+           family={Youssef},
+           familyi={Y\bibinitperiod},
+           given={Amr},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{1}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradate}{1}
+      \strng{namehash}{981becd464e9af4110df9c7cd8b3355d}
+      \strng{fullhash}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{fullhashraw}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{bibnamehash}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{authorbibnamehash}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{authornamehash}{981becd464e9af4110df9c7cd8b3355d}
+      \strng{authorfullhash}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{authorfullhashraw}{5a9e9f8dee774f429245f79907e51a8b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Ataque de negação de serviço - Wikipedia}
-      \field{title}{Denial-of-Service Attack}
-      \field{year}{2025}
+      \field{note}{Artigo sobre entrada rotativa de PIN resistente a observação}
+      \field{title}{A rotary PIN entry scheme resilient to shoulder-surfing}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2009}
+      \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Denial-of-service_attack
+      \verb https://users.encs.concordia.ca/~youssef/Publications/Papers/A%20Rotary%20PIN%20Entry%20Scheme%20Resilient%20to%20Shoulder-Surfing.pdf
       \endverb
       \verb{url}
-      \verb https://en.wikipedia.org/wiki/Denial-of-service_attack
-      \endverb
-    \endentry
-    \entry{PortKnocking}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{2}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Port Knocking - Wikipedia}
-      \field{title}{Port Knocking}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Port_knocking
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Port_knocking
-      \endverb
-    \endentry
-    \entry{synflood}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{3}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradate}{3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{SYN Flood - Wikipedia}
-      \field{title}{SYN Flood}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/SYN_flood
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/SYN_flood
-      \endverb
-    \endentry
-    \entry{2FA}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{4}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradate}{4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Autenticação de dois fatores - Wikipedia}
-      \field{title}{Two-Factor Authentication}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Two-factor_authentication
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Two-factor_authentication
+      \verb https://users.encs.concordia.ca/~youssef/Publications/Papers/A%20Rotary%20PIN%20Entry%20Scheme%20Resilient%20to%20Shoulder-Surfing.pdf
       \endverb
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
-    \entry{geolite2}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=c3af69d127d4446096caecf31afe4995}{%
-           family={MaxMind},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{c3af69d127d4446096caecf31afe4995}
-      \strng{fullhash}{c3af69d127d4446096caecf31afe4995}
-      \strng{fullhashraw}{c3af69d127d4446096caecf31afe4995}
-      \strng{bibnamehash}{c3af69d127d4446096caecf31afe4995}
-      \strng{authorbibnamehash}{c3af69d127d4446096caecf31afe4995}
-      \strng{authornamehash}{c3af69d127d4446096caecf31afe4995}
-      \strng{authorfullhash}{c3af69d127d4446096caecf31afe4995}
-      \strng{authorfullhashraw}{c3af69d127d4446096caecf31afe4995}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Base de dados de geolocalização gratuita}
-      \field{title}{GeoLite2 Free Geolocation Data}
-      \field{urlday}{7}
-      \field{urlmonth}{2}
-      \field{urlyear}{2026}
-      \field{year}{2025}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dev.maxmind.com/geoip/geolite2-free-geolocation-data
-      \endverb
-      \verb{url}
-      \verb https://dev.maxmind.com/geoip/geolite2-free-geolocation-data
-      \endverb
-    \endentry
-    \entry{Nmap}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1786dd533a3e567bfec5478a524f9361}{%
-           family={Team},
-           familyi={T\bibinitperiod},
-           given={Nmap},
-           giveni={N\bibinitperiod},
+    \entry{roth2004pin}{online}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3197334999b3b592056a5406aba8b9a3}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f55c0d01161606926174e465ca052de}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1903988cca477a5416dd1298fdd5151c}{%
+           family={Freidinger},
+           familyi={F\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{fullhash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{fullhashraw}{1786dd533a3e567bfec5478a524f9361}
-      \strng{bibnamehash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{authorbibnamehash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{authornamehash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{authorfullhash}{1786dd533a3e567bfec5478a524f9361}
-      \strng{authorfullhashraw}{1786dd533a3e567bfec5478a524f9361}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \strng{namehash}{7aaf9aea6acf850084520cc833487643}
+      \strng{fullhash}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{fullhashraw}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{bibnamehash}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{authorbibnamehash}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{authornamehash}{7aaf9aea6acf850084520cc833487643}
+      \strng{authorfullhash}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \strng{authorfullhashraw}{b4f820cece252ca022f1b6bfe1c9b2b8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Ferramenta de varredura de rede}
-      \field{title}{Nmap: Network Mapper}
-      \field{urlday}{7}
-      \field{urlmonth}{2}
+      \field{note}{Artigo sobre método de entrada de PIN resistente a observação}
+      \field{title}{A PIN-entry method resilient against shoulder surfing}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
       \field{urlyear}{2026}
-      \field{year}{2025}
+      \field{year}{2004}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://nmap.org/
+      \verb https://dl.acm.org/doi/10.1145/1030083.1030116
       \endverb
       \verb{url}
-      \verb https://nmap.org/
+      \verb https://dl.acm.org/doi/10.1145/1030083.1030116
       \endverb
     \endentry
-    \entry{dos}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+    \entry{rotary2009}{online}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d6c478114426bbff7733748b4587eb76}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Peipei},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0b04522929f226609fbbd2194bec9c1}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5233e9e59d910ef18a1ac737abe71113}{%
+           family={Youssef},
+           familyi={Y\bibinitperiod},
+           given={Amr},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{1}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradate}{1}
+      \strng{namehash}{981becd464e9af4110df9c7cd8b3355d}
+      \strng{fullhash}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{fullhashraw}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{bibnamehash}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{authorbibnamehash}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{authornamehash}{981becd464e9af4110df9c7cd8b3355d}
+      \strng{authorfullhash}{5a9e9f8dee774f429245f79907e51a8b}
+      \strng{authorfullhashraw}{5a9e9f8dee774f429245f79907e51a8b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Ataque de negação de serviço - Wikipedia}
-      \field{title}{Denial-of-Service Attack}
-      \field{year}{2025}
+      \field{note}{Artigo sobre entrada rotativa de PIN resistente a observação}
+      \field{title}{A rotary PIN entry scheme resilient to shoulder-surfing}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2009}
+      \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Denial-of-service_attack
+      \verb https://users.encs.concordia.ca/~youssef/Publications/Papers/A%20Rotary%20PIN%20Entry%20Scheme%20Resilient%20to%20Shoulder-Surfing.pdf
       \endverb
       \verb{url}
-      \verb https://en.wikipedia.org/wiki/Denial-of-service_attack
-      \endverb
-    \endentry
-    \entry{PortKnocking}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{2}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Port Knocking - Wikipedia}
-      \field{title}{Port Knocking}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Port_knocking
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Port_knocking
-      \endverb
-    \endentry
-    \entry{synflood}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{3}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradate}{3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{SYN Flood - Wikipedia}
-      \field{title}{SYN Flood}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/SYN_flood
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/SYN_flood
-      \endverb
-    \endentry
-    \entry{2FA}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
-      \field{extraname}{4}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradate}{4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Autenticação de dois fatores - Wikipedia}
-      \field{title}{Two-Factor Authentication}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Two-factor_authentication
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Two-factor_authentication
+      \verb https://users.encs.concordia.ca/~youssef/Publications/Papers/A%20Rotary%20PIN%20Entry%20Scheme%20Resilient%20to%20Shoulder-Surfing.pdf
       \endverb
     \endentry
   \enddatalist

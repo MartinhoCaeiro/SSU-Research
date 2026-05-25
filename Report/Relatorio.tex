@@ -1,4 +1,5 @@
 \documentclass[a4paper]{article}
+
 % Pacotes necessários
 \usepackage[portuguese]{babel}
 \usepackage[backend=biber, style=apa, citestyle=apa, language=portuguese]{biblatex}
@@ -9,14 +10,13 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{setspace}
-\usepackage{siunitx} % Required for alignment
+\usepackage{siunitx}
 \sisetup{
-  round-mode          = places, % Rounds numbers
-  round-precision     = 2, % to 2 places
+  round-mode = places,
+  round-precision = 2,
 }
 \usepackage{enumerate}
 \usepackage{enumitem}
-\usepackage{amsmath}
 \usepackage{karnaugh-map}
 \usepackage[section]{placeins}
 \usepackage{geometry}
@@ -30,135 +30,106 @@
 \usepackage{array}
 \usepackage{soul}
 \usepackage{afterpage}
+
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \onehalfspacing
-
-
-% Comando para criar uma página vazia
-\newcommand\myemptypage{
-    \null
-    \thispagestyle{empty}
-    \addtocounter{page}{-1}
-    \newpage
-}
 
 % Página de título principal
 \newcommand{\firsttitlepage}{
     \begin{titlepage}
         \centering
         \vspace*{1cm}
-        
-        % Logos superior
+
         \begin{figure}[h!]
             \centering
-            \includegraphics[width=6cm]{Recursos/LOGO_IPB} % Substitua pelo caminho da imagem
+            \includegraphics[width=6cm]{Recursos/LOGO_IPB.png}
             \vspace{0.5cm}
         \end{figure}
 
-        % Informações da instituição
         \large\textbf{INSTITUTO POLITÉCNICO DE BEJA} \\
         \large\textbf{Escola Superior de Tecnologia e Gestão} \\
         \large\textbf{Mestrado em Engenharia de Segurança Informática} \\
         \large\textbf{Segurança no Software e Usabilidade} \\
-        
+
         \vspace{2cm}
-        
-        % Título do projeto
-        {\Huge \textbf{Vaulted Pay™}} \\
-        
+
+        {\Huge \textbf{Vaulted Pass™}} \\
+
         \vspace{1.5cm}
-        
-        % Autores
+
         \large Martinho José Novo Caeiro - 23917 \\
         \large Paulo António Tavares Abade - 23919 \\
-        \large Rafael Conceição Narcio - 24473 \\
-        
+        \large Rafael Conceição Narciso - 24473 \\
+
         \vfill
-        
-        % Logo inferior
+
         \begin{figure}[h!]
             \centering
-            \includegraphics[width=6cm]{Recursos/IPBejaESTIG.jpg} % Substitua pelo caminho da imagem
+            \includegraphics[width=6cm]{Recursos/IPBejaESTIG.jpg}
         \end{figure}
-        
-        
-        % Local e data
+
         {\large Beja, junho de 2026}
     \end{titlepage}
 }
 
+% Segunda página de título
 \newcommand{\secondtitlepage}{
     \begin{titlepage}
         \centering
         \vspace*{1cm}
-        
-        % Informações da instituição
+
         \large\textbf{INSTITUTO POLITÉCNICO DE BEJA} \\
         \large\textbf{Escola Superior de Tecnologia e Gestão} \\
         \large\textbf{Mestrado em Engenharia de Segurança Informática} \\
         \large\textbf{Segurança no Software e Usabilidade} \\
-        
-        \vspace{2cm}
-        
-        % Título do projeto
-        {\Huge \textbf{Vaulted Pay™}} \\
-        
-        \vspace{1.5cm}
-        
-        % Autores
-        \large Martinho José Novo Caeiro - 23917 \\
-        \large Paulo António Tavares Abade - 23919 \\
-        \large Rafael Conceição Narcio - 24473 \\
+
         \vspace{2cm}
 
-        % Orientador
+        {\Huge \textbf{Vaulted Pass™}} \\
+
+        \vspace{1.5cm}
+
+        \large Martinho José Novo Caeiro - 23917 \\
+        \large Paulo António Tavares Abade - 23919 \\
+        \large Rafael Conceição Narciso - 24473 \\
+        \vspace{2cm}
+
         \large Orientadores: \\
         \large Luís Felipe Nobre Horta Batista \\
         \large Luís Carlos da Silva Bruno \\
-        
+
         \vfill
-        
-        % Local e data
+
         {\large Beja, junho de 2026}
     \end{titlepage}
 }
 
 \begin{document}
 
-
-\pagenumbering{gobble} % Oculta numeração da página
-
-% Primeira página de título
+\pagenumbering{gobble}
 \firsttitlepage
-
 \secondtitlepage
 
-
-% Abstract
 \section*{\LARGE\textbf{\textit{Resumo}}}
+Este trabalho analisa o desenho de um sistema de autenticação para dispositivos móveis centrado no equilíbrio entre segurança e usabilidade. O foco está na proteção contra observação direta do PIN, num contexto em que o utilizador desbloqueia frequentemente o telemóvel ou aplicações sensíveis em locais públicos.
 
-Lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+A partir dessa necessidade foi desenvolvido o protótipo \textit{Vaulted Pass™}, com quatro variações de introdução do PIN: teclado padrão, teclado embaralhado, cadeado padrão e cadeado embaralhado. O objetivo é comparar formas de autenticação que reduzam a exposição do código sem tornar a tarefa demasiado lenta ou difícil de aprender.
 
 \vspace{1cm}
-% Keywords
-\textbf{Keywords:} Lore ipsum dolor sit amet, consectetur adipiscing elit.
+\textbf{Keywords:} autenticação, PIN, usabilidade, \textit{shoulder surfing}, segurança.
 \newpage
-%--------------------------------------------------------------------------------------------------------------------------------------
 
 \section*{\LARGE\textbf{\textit{Abstract}}}
+This work analyzes the design of a mobile authentication system focused on balancing security and usability. The emphasis is on protecting PIN entry against direct observation in public or semi-public settings.
 
-Lore ipsum dolor sit amet, consectetur adipiscing elit.
-
-
+The resulting prototype, \textit{Vaulted Pass™}, includes four PIN-entry variations: standard keypad, scrambled keypad, standard padlock, and scrambled padlock. The goal is to compare authentication approaches that reduce exposure without making the task too slow or hard to learn.
 
 \vspace{1cm}
-% Keywords
-\textbf{Keywords:} Lore ipsum dolor sit amet, consectetur adipiscing elit.
-\renewcommand{\contentsname}{Índice}       % Título do sumário
-\renewcommand{\listfigurename}{Índice de Figuras} % Título da lista de figuras
+\textbf{Keywords:} authentication, PIN, usability, shoulder surfing, security.
 
-% Início do conteúdo do relatório
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\listfigurename}{Índice de Figuras}
+
 \newpage
 \doublespacing
 \tableofcontents
@@ -169,123 +140,162 @@ Lore ipsum dolor sit amet, consectetur adipiscing elit.
 \pagenumbering{arabic}
 
 \section{Introdução}\label{introducao}
-Neste trabalho será desenvolvido um sistema de pagamento, que tem como objetivo ser fácil de usar, 
-seguro e acessível para pessoas com pouca experiência em informática. Será primeiro analisado os artigos 
-científicos relacionados com o tema, depois será feita a análise do sistema com base nos resultados obtidos dos artigos científicos, 
-onde serão respondidas as 11 questões fundamentais da análise de tarefas, será feita a caracterização dos 
-utilizadores, serão descritos os cenários de utilização e será feita a análise de tarefas. Depois será 
-feito o desenho do sistema, onde serão desenhadas as interfaces dos equipamentos físicos e ecrãs, serão 
-desenhados os diagramas de navegação, serão descritos os princípios e regras de usabilidade e será 
-feita a avaliação exploratória. Por fim, será feita a implementação do protótipo e a avaliação do protótipo.
+Este trabalho analisa o desenho de um sistema de autenticação para dispositivos móveis centrado no equilíbrio entre segurança e usabilidade. O foco está na proteção contra observação direta do PIN, num contexto em que o utilizador desbloqueia frequentemente o telemóvel ou aplicações sensíveis em locais públicos.
 
-No entanto, apesar de ser pensado para um sistema de pagamento, será focado na questão de autenticação e como deixá-la segura e acessível. As outras 
-tarefas serão apenas descritas, mas não serão implementadas, pois o foco do projeto é a autenticação, e as outras tarefas são apenas para 
-dar contexto ao projeto.
+A partir dessa necessidade foi desenvolvido o protótipo \textit{Vaulted Pass™}, com quatro variações de introdução do PIN: teclado padrão, teclado embaralhado, cadeado padrão e cadeado embaralhado. O objetivo é comparar formas de autenticação que reduzam a exposição do código sem tornar a tarefa demasiado lenta ou difícil de aprender.
+
 \section{Revisão Bibliográfica}
-A revisão bibliográfica será feita com base em três artigos científicos, e cada artigo será analisado e resumido por cada um dos membros do grupo, 
-e depois será feita uma comparação entre os três artigos para saber quais ideais irão ser utilizados neste projeto.
+Foram analisados dois trabalhos científicos diretamente relacionados com autenticação por PIN resistente a observação.
+
+O primeiro artigo, \textit{A PIN-entry method resilient against shoulder surfing}, de Roth, Richter e Freidinger, propõe métodos alternativos de entrada de PIN baseados em \textit{cognitive trapdoor games} \parencite{roth2004pin}. A ideia central é dificultar a captura do PIN mesmo quando o atacante observa todo o processo de entrada, incluindo gravações em vídeo. Os autores estudam simultaneamente segurança e usabilidade e concluem que é possível aumentar de forma relevante a resistência a ataques de \textit{shoulder surfing} sem destruir por completo a viabilidade prática do método. Para este projeto, o principal contributo do artigo foi mostrar que a interface pode alterar significativamente o nível de exposição do PIN, mesmo mantendo a mesma credencial.
+
+O segundo artigo, \textit{A rotary PIN entry scheme resilient to shoulder-surfing}, apresenta um esquema de entrada do PIN do tipo "roda giratória" que também resiste à observação humana e a gravações curtas \parencite{rotary2009}. O trabalho mostra duas variantes da solução e procura um compromisso entre segurança e esforço de interação. O resultado mais relevante para este relatório é a demonstração de que um mecanismo visual e rotativo pode ser compreendido pelo utilizador após curta aprendizagem, ao mesmo tempo que reduz a utilidade de um ataque por observação. Este princípio foi usado no desenho da variante em forma de cadeado do protótipo.
+
+Em conjunto, estes artigos sustentam a opção por comparar uma interface tradicional com alternativas visuais e baralhadas, permitindo estudar se a segurança adicional compensa o custo cognitivo imposto ao utilizador.
 
 \section{Análise do Sistema}
-Nesta secção será feita a análise do sistema, serão respondidas as 11 questões fundamentais da análise de tarefas, 
-será feita a caracterização dos utilizadores, serão descritos os cenários de utilização e será feita a análise de tarefas.
 \subsection{As 11 Questões Fundamentais da Análise de Tarefas}
-1. Quem vai utilizar o sistema?\\
-Todas as pessoas com pouca experiência em informática como pessoas idosas, entre outros.
-
-2. Que tarefas executam atualmente?\\
-Não aplicavel, pois o sistema é novo e não tem utilizadores.
-
-3. Que tarefas são desejáveis?\\
-Pagamento de contas, compras online, entre outros.
-
-4. Como se aprendem as tarefas?\\
-Com o uso do sistema e com ajuda de tutoriais.
-
-5. Onde são desempenhadas as tarefas?\\
-No dispositivo do utilizador, seja ele um computador, tablet ou smartphone.
-
-6. Qual a relação entre o utilizador e a informação?\\
-O utilizador tem acesso à informação através do sistema.
-
-7. Que outros instrumentos tem o utilizador?\\
-Tem acesso à internet, a um teclado e a um rato, ou a um ecrã tátil, dependendo do dispositivo que estiver a usar.
-
-8. Como comunicam os utilizadores entre si?\\
-Não aplicável, pois o sistema é individual e não tem funcionalidades de comunicação entre utilizadores.
-
-9. Qual a frequência de desempenho das tarefas?\\
-Depende do utilizador, mas o sistema deve ser projetado para ser utilizado diariamente.
-
-10. Quais as restrições de tempo impostas?\\
-Nenhuma restrição de tempo específica.
-
-11. Que acontece se algo correr mal?\\
-O sistema deve ser capaz de mostrar um ecrã de erro, ou seja, um ecrã que mostre o que aconteceu.
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Quem vai utilizar o sistema?} Utilizadores de smartphones que procuram maior privacidade e segurança, abrangendo desde pessoas tecnologicamente avançadas até utilizadores com reduzida literacia digital ou séniores.
+    \item \textbf{Que tarefas executam atualmente?} Desbloqueio de dispositivos e aplicações por métodos biométricos (impressão digital, reconhecimento facial) ou por PIN/senhas, frequentemente em espaços onde terceiros podem observar o ecrã.
+    \item \textbf{Que tarefas são desejáveis?} Autenticação robusta que proteja dados sensíveis (bancários, saúde, mensagens) contra observadores externos, mantendo memorização e rapidez no acesso.
+    \item \textbf{Como se aprendem as tarefas?} Por experimentação direta e através de um curto tutorial inicial (onboarding) que explica a lógica dos métodos embaralhados e rotativos.
+    \item \textbf{Onde são desempenhadas as tarefas?} Em contextos móveis: transportes públicos, cafés, filas, ruas — ambientes com risco de observação lateral.
+    \item \textbf{Qual a relação entre o utilizador e a informação?} O utilizador é o titular legítimo dos dados; o sistema atua como gatekeeper, validando a identidade antes de liberar acesso.
+    \item \textbf{Que outros instrumentos tem o utilizador?} Ecrã tátil do smartphone, memória visual/motora e, opcionalmente, acessórios (stylus) ou funcionalidades de acessibilidade do SO.
+    \item \textbf{Como comunicam os utilizadores entre si?} A autenticação é individual; contudo, o desenho deve prevenir que a observação de entradas revele a senha.
+    \item \textbf{Qual a frequência de desempenho das tarefas?} Elevada — o desbloqueio é recorrente ao longo do dia, exigindo soluções eficientes e pouco intrusivas.
+    \item \textbf{Quais as restrições de tempo impostas?} A autenticação deve ser rápida (idealmente < 30s). Em caso de várias tentativas falhadas, deve aplicar-se um tempo de espera para mitigar ataques.
+    \item \textbf{Que acontece se algo correr mal?} Feedback imediato ao utilizador (ex.: "PIN Incorreto"); em falhas repetidas, mecanismos de recuperação (email, código mestre) e registo de tentativas suspeitas.
+\end{enumerate}
 
 \subsection{Caracterização dos Utilizadores}
-Para caracterizar os utilizadores, serão criadas três personas, uma persona idosa, uma persona jovem e 
-uma persona experiente, para representar os diferentes tipos de utilizadores que podem utilizar o sistema.
+Os utilizadores-alvo podem ser caracterizados como pessoas com uso frequente de smartphone e aplicações pessoais sensíveis. Há três perfis especialmente relevantes: utilizadores jovens e tecnologicamente confortáveis, que valorizam rapidez; utilizadores adultos que procuram um equilíbrio entre segurança e conveniência; e utilizadores seniores, que beneficiam de interfaces mais explícitas e de menor carga de memória.
 
-A persona idosa, chamada João, tem 70 anos e pouca experiência em informática. Ele deseja fazer os seus pagamentos online, para não ter 
-que se deslocar à cidade, mas tem dificuldades em usar sistemas complexos e tem medo de cometer erros.
+Em termos de contexto, o nível de escolaridade e a formação em informática variam bastante, pelo que o sistema não pode depender de conhecimento técnico prévio. Se fosse possível contactar utilizadores e organizações, seria importante recolher dados sobre frequência de utilização do telemóvel, experiências anteriores com métodos de autenticação, dificuldades de acessibilidade, tempo aceitável para desbloqueio e perceção real de risco em espaços públicos.
 
-A persona jovem, chamada Ana, tem 25 anos e é muito familiarizada com a tecnologia. Ela quer fazer as suas compras 
-presencialmente sem precisar de usar dinheiro ou de ter a carteira sempre consigo.
-
-A persona experiente, chamada Carlos, tem 40 anos, é muito familiarizado com a tecnologia e consciente 
-dos seus dados pessoais. Ele quer soluções para facilitar a sua vida, sem ter que fazer deslocações desnecessárias, mas 
-tem preocupações com a segurança dos seus dados pessoais e com a privacidade.
-
+\newpage
 \subsection{Cenários de Utilização}
-Cenário 1: Utilizador idoso a pagar uma conta online
-O utilizador idoso, chamado João, tem 70 anos e pouca experiência em informática.
-Ele quer pagar a sua conta de eletricidade online, mas não tem tempo para ir à cidade e quer garantir
-que o processo seja simples e seguro para evitar cometer erros mas impedir outras pessoas de acederem à sua conta 
-e roubarem o seu dinheiro.
 
-Cenário 2: Utilizador jovem a fazer compra num café
-A utilizadora jovem, chamada Ana, tem 25 anos e é muito familiarizada com a tecnologia.
-Ela quer comprar um café usando o seu smartphone, mas não tem dinheiro suficiente para pagar em dinheiro. Ela quer 
-uma maneira rápida e segura utilizar a aplicação sem se preocupar com passwords.
+\textbf{Persona 1: Ricardo (O Analista Urbano)}
+\begin{itemize}
+    \item \textbf{Perfil:} 28 anos, tecnológico, vive em Lisboa e usa transportes públicos.
+    \item \textbf{Cenário:} O Ricardo está num metro lotado e precisa de consultar o saldo bancário. Tem receio que alguém ao seu lado memorize o seu PIN.
+    \item \textbf{Aplicação no protótipo:} Utiliza o \textit{PIN Baralhado}. Como os números mudam de posição a cada acesso, mesmo que alguém observe o movimento dos dedos, não conseguirá replicar a sequência noutra sessão.
+\end{itemize}
 
-Cenário 3: Utilizador experiente a usar o sistema para fazer uma transferência bancária
-O utilizador experiente, chamado Carlos, tem 40 anos, é muito familiarizado com a tecnologia e consciente dos seus dados pessoais.
-Ele quer fazer uma transferência bancária online, mas não tem tempo para ir ao banco. Ele quer uma maneira de se proteger, sem 
-ter que se preocupar com pessoas a acederem à sua conta e roubarem o seu dinheiro.
+\textbf{Persona 2: Dona Maria (A Utilizadora Sénior)}
+\begin{itemize}
+    \item \textbf{Perfil:} 72 anos, reformada, com dificuldades visuais.
+    \item \textbf{Cenário:} Deseja desbloquear o telemóvel para mostrar fotografias a familiares, mas sofre com a leitura de pequenos dígitos.
+    \item \textbf{Aplicação no protótipo:} Utiliza o \textit{PIN em Forma de Cadeado}. Ao rodar o número de vezes necessárias a partir do ponto zero, recorre à memória gestual, tornando o acesso mais intuitivo e menos stressante.
+\end{itemize}
 
+\textbf{Persona 3: Tiago (O Estudante Dinâmico)}
+\begin{itemize}
+    \item \textbf{Perfil:} 21 anos, estudante de engenharia, em movimento constante.
+    \item \textbf{Cenário:} Corre para a faculdade com mochila e precisa de validar um bilhete digital enquanto caminha entre a multidão.
+    \item \textbf{Aplicação no protótipo:} Utiliza o \textit{PIN Forma Cadeado Baralhado}. É a variante de segurança máxima: exige rodar o cadeado enquanto os números estão em posições aleatórias, reduzindo a possibilidade de decifração por observadores distantes.
+\end{itemize}
+
+\newpage
 \subsection{Análise de Tarefas}
-Nesta secção será feita a análise de tarefas, mais propriamente a maneira de como é feita a autenticação, que é a tarefa mais 
-importante do sistema, pois é a tarefa que garante a segurança do sistema e dos dados dos utilizadores.
+A tarefa principal é autenticar o utilizador com um PIN sem expor o código a observadores.
 
-\subsection{Primeira Versão: Autenticação por PIN com Teclado Digital Embaralhado}
+\textbf{Sequência de Tarefas:}
+\begin{enumerate}
+    \item \textbf{Pre-Configuração:} \nobreak\par
+    \begin{enumerate}
+        \item Definir o PIN numérico.
+        \item Confirmar o PIN para evitar erros de digitação.
+        \item Escolher o tipo de PIN: Normal, Baralhado, Forma Cadeado, ou Forma Cadeado Baralhado.
+    \end{enumerate}
+    \item \textbf{Processo de Autenticação (rotina diária):} \nobreak\par
+    \begin{enumerate}
+        \item Ativar o ecrã de desbloqueio (abrir a app ou ligar o ecrã).
+        \item Observar a disposição do teclado (identificar se os números estão na posição padrão ou baralhados).
+        \item Introduzir os dígitos ou rodar a "forma de cadeado" conforme a lógica do método ativo.
+        \item Submeter a tentativa de acesso (automático ao atingir o número de dígitos ou via botão "OK").
+    \end{enumerate}
+\end{enumerate}
 
-\subsection{Segunda Versão: Autenticação por PIN com Teclado Digital Estático}
+Nos métodos tradicionais a tarefa é direta, mas mais vulnerável a observação; nos métodos embaralhados, o utilizador interpreta a disposição atual dos números; na variante em forma de cadeado, a ênfase passa para a memória gestual e no feedback visual dos dials. Em caso de erro, o sistema permite corrigir a tentativa e fornece feedback imediato sem penalizar indevidamente o utilizador legítimo.
 
+\newpage
+\subsection{Versão Base: Autenticação por PIN com Teclado Digital Estático}
+Esta versão representa o método convencional, com teclado fixo e ordenação previsível dos números. É a solução mais rápida e familiar, mas também a mais vulnerável a \textit{shoulder surfing}, gravação por câmara e observação lateral. Serve como base de comparação para medir o custo de segurança das restantes variantes.
 
-\subsection{Terceira Versão: Autenticação por PIN com Teclado Físico Estático}
+\subsection{Primeira Variante: Autenticação por PIN com Teclado Digital Embaralhado}
+A primeira variante altera a posição dos números em cada acesso. O objetivo é reduzir a utilidade da observação visual, porque um atacante que memorize a posição dos toques numa sessão terá dificuldade em repetir a sequência noutra sessão. Esta solução mantém a lógica clássica do PIN, mas obriga o utilizador a olhar para o teclado em cada autenticação.
 
+\subsection{Segunda Variante: Autenticação por PIN com Forma de Cadeado Estática}
+A variante em forma de cadeado traduz a introdução do PIN para um mecanismo visual de rotação. Em vez de tocar diretamente em botões fixos, o utilizador ajusta cada dígito até ao valor pretendido. A vantagem é tornar a leitura do código menos óbvia para um observador, ao mesmo tempo que introduz uma associação visual mais forte entre ação e número.
+
+\subsection{Terceira Variante: Autenticação por PIN com Forma de Cadeado Embaralhada}
+Na variante embaralhada da forma de cadeado, a disposição dos números muda, aumentando ainda mais a resistência à observação. Em contrapartida, o esforço cognitivo cresce, pelo que o desenho deve privilegiar feedback claro, legibilidade e consistência.
 
 \section{Desenho do Sistema}
-Nesta secção será feito o desenho do sistema para todas as versões, onde serão desenhadas as interfaces dos equipamentos físicos e ecrãs, 
-serão desenhados os diagramas de navegação, serão descritos os princípios e regras de usabilidade e será feita 
-a avaliação exploratória.
 \subsection{Interfaces dos Equipamentos Físicos e Ecrãs}
+O protótipo foi desenhado para simular uma aplicação móvel simples, com três ecrãs principais: configuração inicial, ecrã de autenticação e ecrã de resultado.
+
+No ecrã inicial o utilizador escolhe o PIN e a variante de autenticação. No ecrã de teste é apresentada a interface correspondente à variante selecionada, com teclado numérico ou dials em forma de cadeado. No ecrã final surge o tempo de execução, a variante usada e o resultado da tentativa.
+
+As interfaces físicas foram pensadas para comunicação clara e baixo ruído visual, com foco nos elementos essenciais: identificação do método, introdução do PIN, botão de confirmação e feedback de erro ou sucesso.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{../Wireframes/Medium Fidelity.png}
+    \caption{Protótipo de média fidelidade da aplicação.}
+\end{figure}
+
+\newpage
 \subsection{Diagramas de Navegação}
+O fluxo principal do sistema é linear: configuração inicial $\rightarrow$ autenticação $\rightarrow$ resultado $\rightarrow$ regresso ao menu inicial. Em caso de erro no PIN, o utilizador permanece no ecrã de autenticação e pode corrigir a introdução antes de confirmar novamente.
+
+Esta navegação simples reduz a carga de aprendizagem e evita que o utilizador tenha de memorizar caminhos complexos entre ecrãs. Como o objetivo do projeto é avaliar o método de entrada do PIN e não a exploração da aplicação, a estrutura de navegação foi mantida intencionalmente curta.
+
 \subsection{Princípios e Regras de Usabilidade}
-\subsection{Avaliação Exploratória}
+Foram aplicados vários princípios de usabilidade considerados centrais neste projeto:
+\begin{itemize}
+    \item \textbf{Visibilidade do estado do sistema:} o temporizador e o ecrã de resultado mostram sempre o estado atual da interação.
+    \item \textbf{Consistência:} os botões, cores e linguagem visual mantêm-se entre as variantes.
+    \item \textbf{Prevenção de erros:} o campo do PIN aceita apenas dígitos e o sistema pede confirmação explícita.
+    \item \textbf{Reconhecimento em vez de memória:} os métodos visuais mostram o valor atual de forma direta, reduzindo a necessidade de recordar passos anteriores.
+    \item \textbf{Feedback imediato:} cada tentativa termina com indicação clara de sucesso ou falha.
+    \item \textbf{Simplicidade:} a interface evita opções desnecessárias e concentra-se na tarefa principal.
+\end{itemize}
+
+Além destes princípios, o desenho procurou respeitar a legibilidade e a robustez da interação em ecrãs pequenos, privilegiando controlos grandes e um contraste visual suficiente para uso em contexto móvel.
+
+\newpage
 \section{Implementação e Avaliação do Protótipo}
 \subsection{Implementação do Protótipo}
+O protótipo funcional foi implementado em Python com Kivy, usando \texttt{ScreenManager} para alternar entre o ecrã de configuração, o ecrã de teste e o ecrã de resultado. A lógica principal separa quatro modos: teclado padrão, teclado embaralhado, cadeado padrão e cadeado embaralhado.
+
+O teclado numérico é gerado dinamicamente e, na variante embaralhada, a ordem dos números é aleatorizada em cada sessão. Na variante em forma de cadeado, o utilizador interage com dials verticais, o que permite simular uma entrada mais visual e menos dependente da leitura direta do teclado.
+
+O protótipo mede o tempo de execução, regista o melhor desempenho por modo e apresenta feedback imediato após cada tentativa. Estas decisões foram tomadas para suportar uma avaliação comparativa da interface e do comportamento do utilizador.
+
 \subsection{Avaliação do Protótipo}
+O protótipo já permite avaliar diferenças de desempenho entre os vários modos, tanto em termos de rapidez como de facilidade de compreensão. A versão padrão serve como referência de comparação, enquanto as variantes embaralhada e em cadeado permitem estudar o impacto de mecanismos de segurança adicionais na interação.
 
+Para uma avaliação final com utilizadores, deverá ser recolhido o tempo de execução, o número de erros, a preferência subjetiva e a perceção de segurança. Esses dados permitirão discutir se o aumento de proteção justifica o esforço adicional imposto pela interface.
 
-%---------------------------------------------------------------------------------------------------------------------------
+\newpage
+\section{Testes com Utilizadores}
+
+\newpage
 \section{Conclusão}\label{conclusao}
+O trabalho consolidou uma abordagem de autenticação por PIN centrada na resistência à observação e na comparação entre diferentes estilos de interação. A revisão bibliográfica mostrou que existem soluções eficazes para reduzir o risco de \textit{shoulder surfing} sem sacrificar totalmente a usabilidade, e o protótipo desenvolvido materializa esses princípios em quatro variantes distintas.
 
+Do ponto de vista do desenho, a principal conclusão é que segurança e usabilidade não são objetivos incompatíveis, mas exigem compromissos visíveis na interface. O protótipo permite agora avançar para uma avaliação com utilizadores, onde será possível confirmar qual das variantes oferece o melhor equilíbrio entre rapidez, memorização e proteção.
 
-\newpage 
-\renewcommand{\refname}{Bibliografia} % Para artigos
-\renewcommand{\bibname}{Bibliografia} % Para livros e relatórios
-\addcontentsline{toc}{section}{Bibliografia} % Adiciona a Bibliografia ao índice
+\nocite{roth2004pin,rotary2009}
+
+\vspace{2cm}
+\renewcommand{\refname}{Bibliografia}
+\renewcommand{\bibname}{Bibliografia}
+\addcontentsline{toc}{section}{Bibliografia}
 \printbibliography
 
 \end{document}
