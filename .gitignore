@@ -1,0 +1,5 @@
+/venv
+.buildozer
+*.pyc
+build_log.txt
+*.apk
