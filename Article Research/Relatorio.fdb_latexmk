@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Relatorio"] 1779996194.93562 "Relatorio.bcf" "Relatorio.bbl" "Relatorio" 1779996203.15525 0
+["biber Relatorio"] 1779996194.93562 "Relatorio.bcf" "Relatorio.bbl" "Relatorio" 1779996425.74033 0
   "Recursos/referencias.bib" 1779996165 424 6dddbf4e2b819f40b666c060f80c7ff3 ""
-  "Relatorio.bcf" 1779996202 134922 933d9abbafc62da3e4e6c9259f6d7f61 "pdflatex"
+  "Relatorio.bcf" 1779996425 134922 933d9abbafc62da3e4e6c9259f6d7f61 "pdflatex"
   (generated)
   "Relatorio.bbl"
   "Relatorio.blg"
   (rewritten before read)
-["pdflatex"] 1779996201.2049 "c:/Users/Marti/Documents/SSU-Research/Article Research/Relatorio.tex" "Relatorio.pdf" "Relatorio" 1779996203.15616 0
+["pdflatex"] 1779996423.7764 "c:/Users/Marti/Documents/SSU-Research/Article Research/Relatorio.tex" "Relatorio.pdf" "Relatorio" 1779996425.74124 0
   "C:/Users/Marti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779457013 126059 07a841c7d29e1df5b4a8b1eac1f2dc82 ""
   "C:/Users/Marti/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1728.pk" 1731243685 71788 1e02f162203728df16030782559135b3 ""
   "C:/Users/Marti/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1730970230 25420 7f407e2bc8380997d24e59de81372356 ""
@@ -203,14 +203,14 @@
   "C:/Users/Marti/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "Recursos/IPBejaESTIG.jpg" 1773929650 24524 8256cc09fbb9140893a7ec292a0eb389 ""
   "Recursos/LOGO_IPB.png" 1773929650 70931 8e4fd2cd3676e6d3adc0f137d7334c9f ""
-  "Relatorio.aux" 1779996202 3900 77794c40bfd065823d475a432721dcee "pdflatex"
+  "Relatorio.aux" 1779996425 3900 50735969e65104e56205417c5b70b7ec "pdflatex"
   "Relatorio.bbl" 1779996197 5403 9a2215b029e3c699baaaa5d9318e9f5b "biber Relatorio"
-  "Relatorio.lof" 1779996202 33 e37f84d12b50aa32dade73d7d1c52b61 "pdflatex"
-  "Relatorio.out" 1779996202 1296 9a6213b9802e58d714b200ed88b28b5f "pdflatex"
-  "Relatorio.run.xml" 1779996202 2410 717c0927f41f216f3cf4bba59bbfc439 "pdflatex"
-  "Relatorio.tex" 1779996193 12827 8633e93ad5165e4586cc4f1e1af33340 ""
-  "Relatorio.toc" 1779996202 653 570b15f41cdb4e5259a50ad72e0b5bb4 "pdflatex"
-  "c:/Users/Marti/Documents/SSU-Research/Article Research/Relatorio.tex" 1779996193 12827 8633e93ad5165e4586cc4f1e1af33340 ""
+  "Relatorio.lof" 1779996425 33 e37f84d12b50aa32dade73d7d1c52b61 "pdflatex"
+  "Relatorio.out" 1779996425 1296 9a6213b9802e58d714b200ed88b28b5f "pdflatex"
+  "Relatorio.run.xml" 1779996425 2410 717c0927f41f216f3cf4bba59bbfc439 "pdflatex"
+  "Relatorio.tex" 1779996421 12833 cb341c9e044fc0476d4cdf8a258ab0a1 ""
+  "Relatorio.toc" 1779996425 653 20f52a6ac557c71f0fb6f961f4bfa1e8 "pdflatex"
+  "c:/Users/Marti/Documents/SSU-Research/Article Research/Relatorio.tex" 1779996421 12833 cb341c9e044fc0476d4cdf8a258ab0a1 ""
   (generated)
   "Relatorio.aux"
   "Relatorio.bcf"

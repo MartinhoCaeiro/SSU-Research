@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.22)  28 MAY 2026 20:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.22)  28 MAY 2026 20:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -877,24 +877,24 @@ Package babel Info: 'portuguese' activates 'portuges' shorthands.
 )
 \openout1 = `Relatorio.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 Package biblatex Info: Trying to load language 'portuguese' -> 'portuguese-apa'...
 Package biblatex Info: ... file 'portuguese-apa.lbx' found.
  (C:\Users\Marti\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\portuguese-apa.lbx
@@ -917,8 +917,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Relatorio.bbl' found.
  (Relatorio.bbl)
-Package biblatex Info: Reference section=0 on input line 104.
-Package biblatex Info: Reference segment=0 on input line 104.
+Package biblatex Info: Reference section=0 on input line 107.
+Package biblatex Info: Reference segment=0 on input line 107.
  (C:\Users\Marti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count505
@@ -942,7 +942,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package translations Info: no dictionary file `translations-basic-dictionary-portuges.trsl' found. on input line 104.
+Package translations Info: no dictionary file `translations-basic-dictionary-portuges.trsl' found. on input line 107.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -978,7 +978,7 @@ Package translations Info: no dictionary file `translations-basic-dictionary-por
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 104.
+Package hyperref Info: Link coloring OFF on input line 107.
 (Relatorio.out) (Relatorio.out)
 \@outlinefile=\write5
 \openout5 = `Relatorio.out'.
@@ -986,12 +986,12 @@ Package hyperref Info: Link coloring OFF on input line 104.
 <Recursos/LOGO_IPB.png, id=37, 646.415pt x 499.8675pt>
 File: Recursos/LOGO_IPB.png Graphic file (type png)
 <use Recursos/LOGO_IPB.png>
-Package pdftex.def Info: Recursos/LOGO_IPB.png  used on input line 107.
+Package pdftex.def Info: Recursos/LOGO_IPB.png  used on input line 110.
 (pdftex.def)             Requested size: 170.71652pt x 132.01424pt.
 <Recursos/IPBejaESTIG.jpg, id=38, 501.875pt x 301.125pt>
 File: Recursos/IPBejaESTIG.jpg Graphic file (type jpg)
 <use Recursos/IPBejaESTIG.jpg>
-Package pdftex.def Info: Recursos/IPBejaESTIG.jpg  used on input line 107.
+Package pdftex.def Info: Recursos/IPBejaESTIG.jpg  used on input line 110.
 (pdftex.def)             Requested size: 170.71652pt x 102.43167pt.
 
 
@@ -1003,17 +1003,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \secondtitlepage
+l.111 \secondtitlepage
                        [1 <./Recursos/IPBejaESTIG.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \newpage
+l.122 \newpage
                [1]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.133 \newpage
+l.136 \newpage
                [2] (Relatorio.toc)
 \tf@toc=\write6
 \openout6 = `Relatorio.toc'.
@@ -1026,13 +1026,13 @@ l.133 \newpage
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 \newpage
+l.141 \newpage
                [3] [1] [2]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 182.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 185.
  (C:\Users\Marti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 182.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 185.
  (C:\Users\Marti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3] (Relatorio.aux)
@@ -1047,15 +1047,15 @@ Package logreq Info: Writing requests to 'Relatorio.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36657 strings out of 467871
- 735118 string characters out of 5418376
- 1620077 words of memory out of 5000000
- 65021 multiletter control sequences out of 15000+600000
+ 36659 strings out of 467871
+ 735139 string characters out of 5418376
+ 1620006 words of memory out of 5000000
+ 65023 multiletter control sequences out of 15000+600000
  638064 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,6n,118p,1232b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1728.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk>
-Output written on Relatorio.pdf (8 pages, 235775 bytes).
+Output written on Relatorio.pdf (8 pages, 235174 bytes).
 PDF statistics:
  489 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
