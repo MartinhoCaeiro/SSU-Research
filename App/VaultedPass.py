@@ -9,10 +9,12 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.clock import Clock
 from kivy.core.window import Window
 from kivy.graphics import Color, RoundedRectangle, Ellipse, Line
+from kivy.utils import platform
 import random, time
 from typing import Optional, Dict
 
-Window.size = (360, 640)
+if platform not in ('android', 'ios'):
+    Window.size = (360, 640)
 
 BG = (0.15, 0.15, 0.15, 1)
 BTN = (0.96, 0.35, 0.4, 1)
@@ -80,31 +82,30 @@ class TransparentButton(Button):
 class CombinationLockDial(BoxLayout):
     # One dial in the combination lock control.
     def __init__(self, initial_value=0, on_change=None, **kwargs):
-        # One dial in the combination lock control.
         super().__init__(orientation='vertical', size_hint=(1, 1), spacing=5, **kwargs)
         self.on_change = on_change
         self.value = initial_value
 
-        up_btn = RoundedButton(text='▲', size_hint=(1, 0.15), font_size=18, bg_color=PADLOCK_BTN)
+        # Trocado ▲ por + para evitar o erro de falta de fonte no Android
+        up_btn = RoundedButton(text='+', size_hint=(1, 0.25), font_size=24, bg_color=PADLOCK_BTN)
         up_btn.bind(on_press=self.increment)  # type: ignore
         self.add_widget(up_btn)
 
-        self.display = Label(text=str(initial_value), font_size=32, bold=True, color=PADLOCK_SELECTED, size_hint=(1, 0.4))
+        self.display = Label(text=str(initial_value), font_size=36, bold=True, color=PADLOCK_SELECTED, size_hint=(1, 0.5))
         self.add_widget(self.display)
 
-        down_btn = RoundedButton(text='▼', size_hint=(1, 0.15), font_size=18, bg_color=PADLOCK_BTN)
+        # Trocado ▼ por -
+        down_btn = RoundedButton(text='-', size_hint=(1, 0.25), font_size=24, bg_color=PADLOCK_BTN)
         down_btn.bind(on_press=self.decrement)  # type: ignore
         self.add_widget(down_btn)
     
     def increment(self, *args):
-        # Increase the dial value and notify the screen.
         self.value = (self.value + 1) % 10
         self.display.text = str(self.value)
         if self.on_change:
             self.on_change(self.value)
     
     def decrement(self, *args):
-        # Decrease the dial value and notify the screen.
         self.value = (self.value - 1) % 10
         self.display.text = str(self.value)
         if self.on_change:
@@ -118,8 +119,8 @@ class SetupScreen(Screen):
         root = BoxLayout(orientation='vertical', padding=20, spacing=12)
 
         logo_box = BoxLayout(size_hint=(1, 0.15), padding=10)
-        logo_label = Label(text='🔒 Vaulted Pass™', font_size=24, bold=True, color=PURPLE)
-        logo_box.add_widget(logo_label)
+        logo_label = Label(text='Vaulted Pass™', font_size=24, bold=True, color=PURPLE)
+        logo_box.add_widget(logo_label) # <- Esta instrução tem de ficar na linha de baixo!
         root.add_widget(logo_box)
 
         root.add_widget(Label(text='Iniciar Sessão', font_size=26, bold=True, size_hint=(1, 0.08), color=(1, 1, 1, 1)))
@@ -234,13 +235,16 @@ class TestScreen(Screen):
             b = CircleButton(text=nums[0], font_size=28, bold=True)
             b.bind(on_press=self.press)  # type: ignore
             grid.add_widget(b)
-            b = TransparentButton(text='←', font_size=24)
+            
+            # Trocado ← por "Del" para garantir compatibilidade de fonte
+            b = TransparentButton(text='Del', font_size=20)
             b.bind(on_press=self.backspace)  # type: ignore
             grid.add_widget(b)
 
             self.input_area.add_widget(grid)
         else:
-            dial_container = GridLayout(cols=4, spacing=12, padding=20, size_hint=(1, 0.7))
+            # Ajustado o size_hint para ocupar melhor o ecrã vertical do telemóvel
+            dial_container = GridLayout(cols=4, spacing=12, padding=10, size_hint=(1, 0.65))
             self.dials = []
 
             for i in range(len(pwd)):
@@ -249,10 +253,11 @@ class TestScreen(Screen):
                 dial_container.add_widget(dial)
                 self.dials.append(dial)
 
-            confirm = RoundedButton(text='Entrar', size_hint=(1, 0.2), bold=True)
+            # Botão de Entrar ganhou um formato mais visível e melhor distribuição
+            confirm = RoundedButton(text='Entrar', size_hint=(1, 0.15), bold=True, font_size=18)
             confirm.bind(on_press=self.confirm)  # type: ignore
 
-            wrap = BoxLayout(orientation='vertical', spacing=10)
+            wrap = BoxLayout(orientation='vertical', spacing=15, size_hint=(1, 0.75))
             wrap.add_widget(dial_container)
             wrap.add_widget(confirm)
             self.input_area.add_widget(wrap)
