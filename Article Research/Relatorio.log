@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.22)  28 MAY 2026 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.22)  28 MAY 2026 20:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -983,12 +983,12 @@ Package hyperref Info: Link coloring OFF on input line 104.
 \@outlinefile=\write5
 \openout5 = `Relatorio.out'.
 
-<Recursos/LOGO_IPB.png, id=38, 646.415pt x 499.8675pt>
+<Recursos/LOGO_IPB.png, id=37, 646.415pt x 499.8675pt>
 File: Recursos/LOGO_IPB.png Graphic file (type png)
 <use Recursos/LOGO_IPB.png>
 Package pdftex.def Info: Recursos/LOGO_IPB.png  used on input line 107.
 (pdftex.def)             Requested size: 170.71652pt x 132.01424pt.
-<Recursos/IPBejaESTIG.jpg, id=39, 501.875pt x 301.125pt>
+<Recursos/IPBejaESTIG.jpg, id=38, 501.875pt x 301.125pt>
 File: Recursos/IPBejaESTIG.jpg Graphic file (type jpg)
 <use Recursos/IPBejaESTIG.jpg>
 Package pdftex.def Info: Recursos/IPBejaESTIG.jpg  used on input line 107.
@@ -1014,15 +1014,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.133 \newpage
-               [2] (Relatorio.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
- (C:\Users\Marti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
- (C:\Users\Marti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+               [2] (Relatorio.toc)
 \tf@toc=\write6
 \openout6 = `Relatorio.toc'.
 
@@ -1036,158 +1028,36 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.138 \newpage
                [3] [1] [2]
-Underfull \hbox (badness 6893) in paragraph at lines 180--180
-[]|\T1/cmr/bx/n/9 Vulnerabilidade Ma-pe-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-[]|\T1/cmr/bx/n/9 Defesa
- []
-
-
-Underfull \hbox (badness 1824) in paragraph at lines 182--182
-\T1/cmr/m/n/9 tore; en-crip-ta-ção AES-GCM-
- []
-
-
-Underfull \hbox (badness 7540) in paragraph at lines 183--183
-[]|\T1/cmr/m/n/9 Obrigatoriedade de HTTPS;
- []
-
-
-Overfull \hbox (45.07645pt too wide) in paragraph at lines 178--192
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-[]|\T1/cmr/m/n/9 de.bmw.connected.mobile20.row / BMW
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
-[]|\T1/cmr/m/n/9 com.xconns.plugshare / Re-cargo Inc.
- []
-
-
-Overfull \hbox (37.25803pt too wide) in paragraph at lines 205--229
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3] [4]
-Underfull \hbox (badness 1675) in paragraph at lines 246--246
-[]|\T1/cmr/bx/n/9 Relevância Ope-ra-ci-o-nal para
- []
-
-
-Overfull \hbox (17.66437pt too wide) in paragraph at lines 251--251
-[]|\T1/cmr/m/n/9 WRITE_EXTERNAL_STORAGE| 
- []
-
-
-Overfull \hbox (3.4761pt too wide) in paragraph at lines 255--255
-[]|\T1/cmr/m/n/9 ACCESS_NETWORK_STATE| 
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 256--256
-[]|\T1/cmr/m/n/9 Otimização do car-re-ga-dor Wi-Fi
- []
-
-
-Overfull \hbox (45.77184pt too wide) in paragraph at lines 244--258
- [][] 
- []
-
-[5]
-Overfull \hbox (4.6095pt too wide) in paragraph at lines 277--283
- [][] 
- []
-
-[6] [7] [8] (Relatorio.aux)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 182.
+ (C:\Users\Marti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 182.
+ (C:\Users\Marti\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3] (Relatorio.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `Relatorio.out' has not changed.
-(rerunfilecheck)             Checksum: 9D1D4F1697C43B4838ADE16224FB454D;1553.
+(rerunfilecheck)             Checksum: 9A6213B9802E58D714B200ED88B28B5F;1296.
 Package logreq Info: Writing requests to 'Relatorio.run.xml'.
 \openout1 = `Relatorio.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36886 strings out of 467871
- 738983 string characters out of 5418376
- 1638119 words of memory out of 5000000
- 65190 multiletter control sequences out of 15000+600000
- 642707 words of font info for 74 fonts, out of 8000000 for 9000
+ 36657 strings out of 467871
+ 735118 string characters out of 5418376
+ 1620077 words of memory out of 5000000
+ 65021 multiletter control sequences out of 15000+600000
+ 638064 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,118p,1244b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{cite.0@ref20} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref18} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref17} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref16} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref15} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref14} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref12} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref13} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref10} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref11} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref9} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref7} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref8} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref6} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref5} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref4} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref3} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref2} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@ref1} has been referenced but does not exist, replaced by a fixed one
-
- <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1728.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk>
-Output written on Relatorio.pdf (13 pages, 335018 bytes).
+ 99i,6n,118p,1232b,2805s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1728.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk>
+Output written on Relatorio.pdf (8 pages, 235775 bytes).
 PDF statistics:
- 833 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
