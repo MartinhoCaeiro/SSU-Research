@@ -143,41 +143,94 @@ Based on these findings we propose a defence matrix aligned with OWASP/CWE contr
 
 \section{Introdução}
 
-A transição global para a mobilidade sustentável posicionou os veículos elétricos (EVs) como elementos cruciais no desenvolvimento de cidades inteligentes modernas. Esta evolução, contudo, é acompanhada por uma dependência tecnológica profunda em termos de software e conectividade digital. Estima-se que uma única viagem efetuada por um veículo elétrico conectado gere mais de 1.000 pontos de dados distintos, abrangendo informações altamente sensíveis de telemetria, geolocalização e perfis de consumo de energia. Para gerir esta vasta gama de dados e interagir com as funcionalidades dos veículos, os utilizadores recorrem intensivamente a aplicações móveis baseadas nos paradigmas de computação em nuvem e em nevoeiro (\textit{cloud and fog computing}) \cite{ref1}.
+A transição global para a mobilidade sustentável posicionou os veículos elétricos (EVs) como elementos cruciais 
+no desenvolvimento de cidades inteligentes modernas. Esta evolução, contudo, é acompanhada por uma dependência 
+tecnológica profunda em termos de software e conectividade digital. Estima-se que uma única viagem efetuada por 
+um veículo elétrico conectado gere mais de 1.000 pontos de dados distintos, abrangendo informações altamente 
+sensíveis de telemetria, geolocalização e perfis de consumo de energia. Para gerir esta vasta gama de dados e 
+interagir com as funcionalidades dos veículos, os utilizadores recorrem intensivamente a aplicações móveis baseadas 
+nos paradigmas de computação em nuvem e em nevoeiro (\textit{cloud and fog computing}) (\cite{ref1}).
 
-Estas aplicações móveis, desenvolvidas tanto por fabricantes originais de equipamento (OEM) como por programadores terceiros, oferecem funcionalidades críticas como o controlo remoto do veículo (trancamento, arranque e climatização), a localização e reserva de postos de carregamento e o planeamento inteligente de rotas \cite{ref1}. Todavia, por comunicarem através de servidores intermediários com múltiplos pontos de entrada e saída de dados, estas aplicações constituem uma superfície de ataque significativa e um alvo atrativo para ameaças cibernéticas \cite{ref1}. A exploração de falhas de segurança nestes canais móveis compromete não apenas a privacidade dos dados do utilizador, mas também a integridade física do veículo e dos seus ocupantes \cite{ref1}.
+Estas aplicações móveis, desenvolvidas tanto por fabricantes originais de equipamento (OEM) como por programadores 
+terceiros, oferecem funcionalidades críticas como o controlo remoto do veículo (trancamento, arranque e climatização), 
+a localização e reserva de postos de carregamento e o planeamento inteligente de rotas (\cite{ref1}). Todavia, por 
+comunicarem através de servidores intermediários com múltiplos pontos de entrada e saída de dados, estas aplicações 
+constituem uma superfície de ataque significativa e um alvo atrativo para ameaças cibernéticas (\cite{ref1}). A exploração 
+de falhas de segurança nestes canais móveis compromete não apenas a privacidade dos dados do utilizador, mas também a 
+integridade física do veículo e dos seus ocupantes (\cite{ref1}).
 
 \section{Problema analisado}
 
-O ecossistema de segurança dos veículos elétricos está estruturado em cinco componentes principais: a segurança das estações de carregamento, a privacidade da informação, a segurança do software, a conectividade do veículo e a segurança da condução autónoma \cite{ref1}. O problema central analisado no estudo reside na fragmentação severa das aplicações de EV disponíveis no mercado, na ausência de uniformidade regulatória e na falta de padrões consolidados de cibersegurança para guiar o seu desenvolvimento \cite{ref1}. Esta desorganização é ampliada pela integração frequente de dispositivos móveis com os sistemas de infoentretenimento dos automóveis, como o Android Auto \cite{ref1}. Pesquisas revelam que cerca de 80\% das aplicações desenhadas para este fim contêm vulnerabilidades potenciais, com 25\% delas a apresentar riscos graves associados à execução arbitrária de JavaScript \cite{ref1}. Esta falha sistémica permite que agentes maliciosos leiam dados confidenciais ou enviem comandos prejudiciais diretamente ao hardware do veículo \cite{ref1}.
+O ecossistema de segurança dos veículos elétricos está estruturado em cinco componentes principais: a segurança das 
+estações de carregamento, a privacidade da informação, a segurança do software, a conectividade do veículo e a segurança 
+da condução autónoma (\cite{ref1}). O problema central analisado no estudo reside na fragmentação severa das aplicações 
+de EV disponíveis no mercado, na ausência de uniformidade regulatória e na falta de padrões consolidados de cibersegurança 
+para guiar o seu desenvolvimento \cite{ref1}. Esta desorganização é ampliada pela integração frequente de dispositivos 
+móveis com os sistemas de infoentretenimento dos automóveis, como o Android Auto (\cite{ref1}). Pesquisas 
+revelam que cerca de 80\% das aplicações desenhadas para este fim contêm vulnerabilidades potenciais, com 
+25\% delas a apresentar riscos graves associados à execução arbitrária de JavaScript (\cite{ref1}). Esta 
+falha sistémica permite que agentes maliciosos leiam dados confidenciais ou enviem comandos prejudiciais 
+diretamente ao hardware do veículo (\cite{ref1}).
 
 \section{Metodologia abordada}
 
-Para avaliar sistematicamente o nível de segurança das aplicações de veículos elétricos, a investigação adota uma metodologia dividida em quatro fases estruturadas de engenharia inversa e análise comportamental: Análise Estática, Análise Dinâmica, Construção de Conhecimento e Avaliação de Segurança \cite{ref1}.
+Para avaliar sistematicamente o nível de segurança das aplicações de veículos elétricos, a investigação 
+adota uma metodologia dividida em quatro fases estruturadas de engenharia inversa e análise comportamental: 
+Análise Estática, Análise Dinâmica, Construção de Conhecimento e Avaliação de Segurança (\cite{ref1}).
 
-A fase de \textbf{Análise Estática} envolve o exame do código-fonte e da estrutura dos pacotes binários descompilados das aplicações sem que estas sejam efetivamente executadas \cite{ref1}. O foco reside na extração e auditoria das permissões de acesso do ficheiro manifesto Android, no mapeamento das bibliotecas de software de terceiros em busca de vulnerabilidades conhecidas, na análise de ficheiros de configuração XML para detetar configurações desatualizadas e no varrimento de chaves criptográficas integradas diretamente no código (\textit{hardcoded strings}).
+A fase de \textbf{Análise Estática} envolve a perícia do código-fonte e da estrutura dos pacotes 
+binários descompilados das aplicações sem que estas sejam efetivamente executadas (\cite{ref1}). 
+O foco reside na extração e auditoria das permissões de acesso do ficheiro manifesto Android, no 
+mapeamento das bibliotecas de software de terceiros em busca de vulnerabilidades conhecidas, 
+na análise de ficheiros de configuração XML para detetar configurações desatualizadas e no 
+varrimento de chaves criptográficas integradas diretamente no código (\textit{hardcoded strings}).
 
-A fase de \textbf{Análise Dinâmica} foca-se na execução prática das aplicações em ambientes sandbox virtualizados controlados e em dispositivos Android emulados. Esta etapa permite monitorizar em runtime as ligações de rede estabelecidas, examinar a segurança das comunicações SSL/TLS, validar a implementação prática do mecanismo de \textit{SSL Pinning} (ancoragem de certificados) e analisar potenciais fugas de dados telemétricos de geolocalização e informações de identificação pessoal (PII) sob simulação de uso ativo \cite{ref1}.
+A fase de \textbf{Análise Dinâmica} foca-se na execução prática das aplicações em ambientes 
+sandbox virtualizados controlados e em dispositivos Android emulados. Esta etapa permite 
+monitorizar em runtime as ligações de rede estabelecidas, examinar a segurança das comunicações 
+SSL/TLS, validar a implementação prática do mecanismo de \textit{SSL Pinning} (ancoragem de certificados) 
+e analisar potenciais fugas de dados telemétricos de geolocalização e informações de 
+identificação pessoal (PII) sob simulação de uso ativo (\cite{ref1}).
 
-Na fase de \textbf{Construção de Conhecimento}, as fragilidades e desvios de segurança detetados nas etapas anteriores são catalogados e mapeados de acordo com os padrões da indústria de software \cite{ref1}. Este mapeamento correlaciona os bugs e anomalias identificados diretamente com as taxonomias globais de segurança, especificamente o referencial do OWASP Mobile Top Ten e o dicionário de fraquezas de codificação CWE (\textit{Common Weakness Enumeration}).
+Na fase de \textbf{Construção de Conhecimento}, as fragilidades e desvios de 
+segurança detetados nas etapas anteriores são catalogados e mapeados de acordo com 
+os padrões da indústria de software (\cite{ref1}). Este mapeamento correlaciona os 
+bugs e anomalias identificados diretamente com as taxonomias globais de segurança, 
+especificamente o referencial do OWASP Mobile Top Ten e o dicionário de fraquezas de 
+codificação CWE (\textit{Common Weakness Enumeration}).
 
-Por fim, a fase de \textbf{Avaliação de Segurança} utiliza os mapeamentos anteriores para classificar o nível de risco de cada aplicação (High, Medium ou Warning) com base na probabilidade de exploração e na gravidade do impacto potencial \cite{ref1}. Esta fase culmina no desenvolvimento de propostas defensivas estruturadas para neutralizar as vulnerabilidades observadas.
+Por fim, a fase de \textbf{Avaliação de Segurança} utiliza os mapeamentos anteriores 
+para classificar o nível de risco de cada aplicação (High, Medium ou Warning) com 
+base na probabilidade de exploração e na gravidade do impacto potencial (\cite{ref1}). 
+Esta fase culmina no desenvolvimento de propostas defensivas estruturadas para neutralizar as vulnerabilidades observadas.
 
 \section{Desenho da proposta de solução}
 
-A solução desenhada pelo estudo baseia-se numa arquitetura de remediação sistemática mapeada entre as falhas técnicas detetadas e os controlos defensivos padrão do OWASP e da CWE \cite{ref1}. A finalidade desta arquitetura é fornecer um quadro de referência de código e integração segura para os programadores de software do setor automotivo.
+A solução desenhada pelo estudo baseia-se numa arquitetura de remediação sistemática mapeada 
+entre as falhas técnicas detetadas e os controlos defensivos padrão do OWASP e da CWE (\cite{ref1}). 
+A finalidade desta arquitetura é fornecer um quadro de referência de código e integração segura para 
+os programadores de software do setor automotivo.
 
 \section{Implementação da solução/experiência}
 
-O procedimento experimental para validação e extração das falhas utilizou um laboratório montado especificamente para analisar a integridade do ecossistema das 20 aplicações selecionadas. Para obter dados fiáveis, a seleção das aplicações foi equilibrada para cobrir as marcas de fabricantes líderes e as plataformas utilitárias de terceiros mais descarregadas nas lojas oficiais \cite{ref1}.
+O procedimento experimental para validação e extração das falhas utilizou um laboratório montado 
+especificamente para analisar a integridade do ecossistema das 20 aplicações selecionadas. Para 
+obter dados fiáveis, a seleção das aplicações foi equilibrada para cobrir as marcas de fabricantes 
+líderes e as plataformas utilitárias de terceiros mais descarregadas nas lojas oficiais (\cite{ref1}).
 
 \section{Resultados e discussão}
 
-Os resultados gerados pela investigação traçam um panorama preocupante sobre a forma como as permissões do sistema Android e as vulnerabilidades técnicas são implementadas nos dois grupos de aplicações \cite{ref1}. A análise estática identificou uma tendência sistemática para a acumulação desnecessária de privilégios de acesso.
+Os resultados gerados pela investigação traçam um panorama preocupante sobre a forma como 
+as permissões do sistema Android e as vulnerabilidades técnicas são implementadas nos dois grupos de aplicações 
+(\cite{ref1}). A análise estática identificou uma tendência sistemática para a acumulação desnecessária de privilégios de acesso.
 
 \section{Conclusões e Trabalho Futuro}
 
-O estudo comparativo contribui com conclusões valiosas para o setor automotivo digitalizado, mapeando sistematicamente as falhas de cibersegurança que afetam o ecossistema móvel de suporte aos veículos elétricos \cite{ref1}. A análise comprova que a velocidade do desenvolvimento e a sofisticação mecânica dos EVs não foram acompanhadas pelas práticas de ciclo de vida seguro no desenvolvimento de aplicações e utilitários de carregamento \cite{ref1}.
+O estudo comparativo contribui com conclusões valiosas para o setor automotivo digitalizado, 
+mapeando sistematicamente as falhas de cibersegurança que afetam o ecossistema móvel de suporte 
+aos veículos elétricos (\cite{ref1}). A análise comprova que a velocidade do desenvolvimento 
+e a sofisticação mecânica dos EVs não foram acompanhadas pelas práticas de ciclo de vida seguro 
+no desenvolvimento de aplicações e utilitários de carregamento (\cite{ref1}).
 
 \renewcommand{\refname}{Bibliografia}
 \renewcommand{\bibname}{Bibliografia}
