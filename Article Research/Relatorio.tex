@@ -95,7 +95,7 @@
         \vspace{1cm}
 
         \large Orientadores: \\
-        \large Luís Felipe Nobre Horta Batista \\
+        \large Luís Felipe Nobre Horta Batista Garcia \\
         \large Luís Carlos da Silva Bruno \\
 
         \vfill
@@ -153,33 +153,47 @@ nos paradigmas de computação em nuvem e em nevoeiro (\textit{cloud and fog com
 
 Estas aplicações móveis, desenvolvidas tanto por fabricantes originais de equipamento (OEM) como por programadores 
 terceiros, oferecem funcionalidades críticas como o controlo remoto do veículo (trancamento, arranque e climatização), 
-a localização e reserva de postos de carregamento e o planeamento inteligente de rotas (\cite{ref1}). Todavia, por 
+a localização e reserva de postos de carregamento e o planeamento inteligente de rotas. Todavia, por 
 comunicarem através de servidores intermediários com múltiplos pontos de entrada e saída de dados, estas aplicações 
-constituem uma superfície de ataque significativa e um alvo atrativo para ameaças cibernéticas (\cite{ref1}). A exploração 
+constituem uma superfície de ataque significativa e um alvo atrativo para ameaças cibernéticas. A exploração 
 de falhas de segurança nestes canais móveis compromete não apenas a privacidade dos dados do utilizador, mas também a 
-integridade física do veículo e dos seus ocupantes (\cite{ref1}).
+integridade física do veículo e dos seus ocupantes.\\\\
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=14cm]{Recursos/1.png}
+    \caption{Estrutura aplicação EV}
+\end{figure}
+
+\newpage
 \section{Problema analisado}
 
 O ecossistema de segurança dos veículos elétricos está estruturado em cinco componentes principais: a segurança das 
 estações de carregamento, a privacidade da informação, a segurança do software, a conectividade do veículo e a segurança 
-da condução autónoma (\cite{ref1}). O problema central analisado no estudo reside na fragmentação severa das aplicações 
+da condução autónoma. O problema central analisado no estudo reside na fragmentação severa das aplicações 
 de EV disponíveis no mercado, na ausência de uniformidade regulatória e na falta de padrões consolidados de cibersegurança 
 para guiar o seu desenvolvimento \cite{ref1}. Esta desorganização é ampliada pela integração frequente de dispositivos 
-móveis com os sistemas de infoentretenimento dos automóveis, como o Android Auto (\cite{ref1}). Pesquisas 
+móveis com os sistemas de info-entretenimento dos automóveis, como o Android Auto. Pesquisas 
 revelam que cerca de 80\% das aplicações desenhadas para este fim contêm vulnerabilidades potenciais, com 
-25\% delas a apresentar riscos graves associados à execução arbitrária de JavaScript (\cite{ref1}). Esta 
+25\% delas a apresentar riscos graves associados à execução arbitrária de JavaScript. Esta 
 falha sistémica permite que agentes maliciosos leiam dados confidenciais ou enviem comandos prejudiciais 
-diretamente ao hardware do veículo (\cite{ref1}).
+diretamente ao hardware do veículo.\\\\
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=14cm]{Recursos/2.png}
+    \caption{Funcionalidades mais comuns em aplicações EV}
+\end{figure}
+
+\newpage
 \section{Metodologia abordada}
 
 Para avaliar sistematicamente o nível de segurança das aplicações de veículos elétricos, a investigação 
 adota uma metodologia dividida em quatro fases estruturadas de engenharia inversa e análise comportamental: 
-Análise Estática, Análise Dinâmica, Construção de Conhecimento e Avaliação de Segurança (\cite{ref1}).
+Análise Estática, Análise Dinâmica, Construção de Conhecimento e Avaliação de Segurança.
 
 A fase de \textbf{Análise Estática} envolve a perícia do código-fonte e da estrutura dos pacotes 
-binários descompilados das aplicações sem que estas sejam efetivamente executadas (\cite{ref1}). 
+binários descompilados das aplicações sem que estas sejam efetivamente executadas. 
 O foco reside na extração e auditoria das permissões de acesso do ficheiro manifesto Android, no 
 mapeamento das bibliotecas de software de terceiros em busca de vulnerabilidades conhecidas, 
 na análise de ficheiros de configuração XML para detetar configurações desatualizadas e no 
@@ -190,48 +204,55 @@ sandbox virtualizados controlados e em dispositivos Android emulados. Esta etapa
 monitorizar em runtime as ligações de rede estabelecidas, examinar a segurança das comunicações 
 SSL/TLS, validar a implementação prática do mecanismo de \textit{SSL Pinning} (ancoragem de certificados) 
 e analisar potenciais fugas de dados telemétricos de geolocalização e informações de 
-identificação pessoal (PII) sob simulação de uso ativo (\cite{ref1}).
+identificação pessoal (PII) sob simulação de uso ativo.
 
 Na fase de \textbf{Construção de Conhecimento}, as fragilidades e desvios de 
 segurança detetados nas etapas anteriores são catalogados e mapeados de acordo com 
-os padrões da indústria de software (\cite{ref1}). Este mapeamento correlaciona os 
+os padrões da indústria de software. Este mapeamento correlaciona os 
 bugs e anomalias identificados diretamente com as taxonomias globais de segurança, 
 especificamente o referencial do OWASP Mobile Top Ten e o dicionário de fraquezas de 
 codificação CWE (\textit{Common Weakness Enumeration}).
 
 Por fim, a fase de \textbf{Avaliação de Segurança} utiliza os mapeamentos anteriores 
 para classificar o nível de risco de cada aplicação (High, Medium ou Warning) com 
-base na probabilidade de exploração e na gravidade do impacto potencial (\cite{ref1}). 
+base na probabilidade de exploração e na gravidade do impacto potencial. 
 Esta fase culmina no desenvolvimento de propostas defensivas estruturadas para neutralizar as vulnerabilidades observadas.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{Recursos/3.png}
+    \caption{Metodologia Utilizada}
+\end{figure}
+
+\newpage
 \section{Desenho da proposta de solução}
 
 A solução desenhada pelo estudo baseia-se numa arquitetura de remediação sistemática mapeada 
-entre as falhas técnicas detetadas e os controlos defensivos padrão do OWASP e da CWE (\cite{ref1}). 
+entre as falhas técnicas detetadas e os controlos defensivos padrão do OWASP e da CWE. 
 A finalidade desta arquitetura é fornecer um quadro de referência de código e integração segura para 
-os programadores de software do setor automotivo.
+os programadores de software do setor automóvel.
 
 \section{Implementação da solução/experiência}
 
 O procedimento experimental para validação e extração das falhas utilizou um laboratório montado 
 especificamente para analisar a integridade do ecossistema das 20 aplicações selecionadas. Para 
 obter dados fiáveis, a seleção das aplicações foi equilibrada para cobrir as marcas de fabricantes 
-líderes e as plataformas utilitárias de terceiros mais descarregadas nas lojas oficiais (\cite{ref1}).
+líderes e as plataformas utilitárias de terceiros mais descarregadas nas lojas oficiais.
 
 \section{Resultados e discussão}
 
 Os resultados gerados pela investigação traçam um panorama preocupante sobre a forma como 
-as permissões do sistema Android e as vulnerabilidades técnicas são implementadas nos dois grupos de aplicações 
-(\cite{ref1}). A análise estática identificou uma tendência sistemática para a acumulação desnecessária de privilégios de acesso.
+as permissões do sistema Android e as vulnerabilidades técnicas são implementadas nos dois grupos de aplicações. A análise estática identificou uma tendência sistemática para a acumulação desnecessária de privilégios de acesso.
 
 \section{Conclusões e Trabalho Futuro}
 
-O estudo comparativo contribui com conclusões valiosas para o setor automotivo digitalizado, 
+O estudo comparativo contribui com conclusões valiosas para o setor automóvel digitalizado, 
 mapeando sistematicamente as falhas de cibersegurança que afetam o ecossistema móvel de suporte 
-aos veículos elétricos (\cite{ref1}). A análise comprova que a velocidade do desenvolvimento 
+aos veículos elétricos. A análise comprova que a velocidade do desenvolvimento 
 e a sofisticação mecânica dos EVs não foram acompanhadas pelas práticas de ciclo de vida seguro 
-no desenvolvimento de aplicações e utilitários de carregamento (\cite{ref1}).
+no desenvolvimento de aplicações e utilitários de carregamento.
 
+\newpage
 \renewcommand{\refname}{Bibliografia}
 \renewcommand{\bibname}{Bibliografia}
 \addcontentsline{toc}{section}{Bibliografia}
