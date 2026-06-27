@@ -3,3 +3,13 @@
 *.pyc
 build_log.txt
 *.apk
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
