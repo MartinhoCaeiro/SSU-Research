@@ -30,7 +30,7 @@
 \usepackage{array}
 \usepackage{soul}
 \usepackage{afterpage}
-
+\usepackage{makecell}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \onehalfspacing
 
@@ -152,14 +152,14 @@ sem tornar a tarefa demasiado lenta ou difícil de aprender.
 Foram analisados dois trabalhos científicos diretamente relacionados com autenticação por PIN resistente a observação.
 
 O primeiro artigo, \textit{A PIN-entry method resilient against shoulder surfing}, de Roth, Richter e Freidinger, propõe métodos alternativos 
-de entrada de PIN baseados em \textit{cognitive trapdoor games} \cite{roth2004pin}. A ideia central é dificultar a captura do PIN mesmo 
+de entrada de PIN baseados em \textit{cognitive trapdoor games} (\cite{roth2004pin}). A ideia central é dificultar a captura do PIN mesmo 
 quando o atacante observa todo o processo de entrada, incluindo gravações em vídeo. Os autores estudam simultaneamente segurança e usabilidade 
 e concluem que é possível aumentar de forma relevante a resistência a ataques de \textit{shoulder surfing} sem destruir por completo a 
 viabilidade prática do método. Para este projeto, o principal contributo do artigo foi mostrar que a interface pode alterar significativamente 
 o nível de exposição do PIN, mesmo mantendo a mesma credencial.
 
 O segundo artigo, \textit{A rotary PIN entry scheme resilient to shoulder-surfing}, apresenta um esquema de entrada do PIN do tipo "roda giratória" 
-que também resiste à observação humana e a gravações curtas \cite{rotary2009}. O trabalho mostra duas variantes da solução e 
+que também resiste à observação humana e a gravações curtas (\cite{rotary2009}). O trabalho mostra duas variantes da solução e 
 procura um compromisso entre segurança e esforço de interação. O resultado mais relevante para este relatório é a demonstração de 
 que um mecanismo visual e rotativo pode ser compreendido pelo utilizador após curta aprendizagem, ao mesmo tempo que reduz a utilidade 
 de um ataque por observação. Este princípio foi usado no desenho da variante em forma de cadeado do protótipo.
@@ -342,6 +342,45 @@ segurança. Esses dados permitirão discutir se o aumento de proteção justific
 
 \newpage
 \section{Testes com Utilizadores}
+Foram realizados testes com um grupo de 10 utilizadores, com idades entre 22 e 30 anos, todos com alguma experiência em smartphones. Para 
+cada participante foi explicado previamente o objetivo do teste e foi fornecido o guião de tarefas. Cada utilizador experimentou as quatro variantes 
+do protótipo, e foram registados o tempo de execução, o número de erros e a preferência subjetiva.
+
+
+\begin{table}[H]
+\centering
+% Opcional: Reduz ligeiramente o espaço entre colunas para garantir que cabe perfeitamente na página
+\setlength{\tabcolsep}{5pt} 
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Utilizador} & 
+\textbf{\makecell{Tempo\\TP (s)}} & 
+\textbf{\makecell{Erros\\TP}} & 
+\textbf{\makecell{Tempo\\TEmb (s)}} & 
+\textbf{\makecell{Erros\\TEmb}} & 
+\textbf{\makecell{Tempo\\CEst (s)}} & 
+\textbf{\makecell{Erros\\CEst}} & 
+\textbf{\makecell{Tempo\\CEmb (s)}} & 
+\textbf{\makecell{Erros\\CEmb}} \\
+\hline
+Utilizador J & 4.23 & 0 & 3.55 & 0 & 7.63 & 2 & 9.61 & 0 \\
+Utilizador H & 3.22 & 0 & 4.47 & 0 & 5.96 & 2 & 6.49 & 1 \\
+Utilizador T & 3.42 & 0 & 5.31 & 0 & 7.61 & 0 & 5.79 & 0 \\
+Utilizador S & 1.26 & 0 & 2.28 & 0  & 8.51 & 0 & 9.20 & 0 \\
+Utilizador 5 &  &  &  &  &  &  &  &  \\
+\hline
+\textbf{Média} &   &   &   &   &   &   &   &   \\
+\hline
+\end{tabular}
+\caption{Resultados dos testes com utilizadores.}
+\end{table}
+
+
+Os utilizadores demonstraram uma preferência clara sobre o teclado embaralhado, e o maior consenso foi 
+que a variante em forma de cadeado, embora interessante como solução, exigia mais tempo e esse tempo extra podia 
+ser um fator que poderia facilitar a observação do PIN e posteriormente a sua memorização. Os utilizadores 
+mencionam que apesar de a variante de teclado embaralhado não permitir movimentos memorizados, 
+o seu tempo de execução é mais rápido e dificulta a observação do PIN. 
 
 \newpage
 \section{Conclusão}\label{conclusao}

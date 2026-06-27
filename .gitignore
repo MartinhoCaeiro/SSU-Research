@@ -13,3 +13,5 @@ build_log.txt
 *.toc
 *.fls
 *.fdb_latexmk
+*.lof
+*.bcf
