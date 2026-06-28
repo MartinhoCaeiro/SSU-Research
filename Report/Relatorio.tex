@@ -111,18 +111,27 @@
 \secondtitlepage
 
 \section*{\LARGE\textbf{\textit{Resumo}}}
-Este trabalho analisa o desenho de um sistema de autenticação para dispositivos móveis centrado no equilíbrio entre segurança e usabilidade. O foco está na proteção contra observação direta do PIN, num contexto em que o utilizador desbloqueia frequentemente o telemóvel ou aplicações sensíveis em locais públicos.
+Este trabalho analisa o desenho de um sistema de autenticação para dispositivos móveis 
+centrado no equilíbrio entre segurança e usabilidade. O foco está na proteção contra 
+observação direta do PIN, num contexto em que o utilizador desbloqueia frequentemente 
+o telemóvel ou aplicações sensíveis em locais públicos.
 
-A partir dessa necessidade foi desenvolvido o protótipo \textit{Vaulted Pass™}, com quatro variações de introdução do PIN: teclado padrão, teclado embaralhado, cadeado padrão e cadeado embaralhado. O objetivo é comparar formas de autenticação que reduzam a exposição do código sem tornar a tarefa demasiado lenta ou difícil de aprender.
+A partir dessa necessidade foi desenvolvido o protótipo \textit{Vaulted Pass™}, com quatro 
+variações de introdução do PIN: teclado padrão, teclado embaralhado, cadeado padrão e 
+cadeado embaralhado. O objetivo é comparar formas de autenticação que reduzam a exposição 
+do código sem tornar a tarefa demasiado lenta ou difícil de aprender.
 
 \vspace{1cm}
 \textbf{Keywords:} autenticação, PIN, usabilidade, \textit{shoulder surfing}, segurança.
 \newpage
 
 \section*{\LARGE\textbf{\textit{Abstract}}}
-This work analyzes the design of a mobile authentication system focused on balancing security and usability. The emphasis is on protecting PIN entry against direct observation in public or semi-public settings.
+This work analyzes the design of a mobile authentication system focused on balancing security and usability. 
+The emphasis is on protecting PIN entry against direct observation in public or semi-public settings.
 
-The resulting prototype, \textit{Vaulted Pass™}, includes four PIN-entry variations: standard keypad, scrambled keypad, standard padlock, and scrambled padlock. The goal is to compare authentication approaches that reduce exposure without making the task too slow or hard to learn.
+The resulting prototype, \textit{Vaulted Pass™}, includes four PIN-entry variations: standard keypad, 
+scrambled keypad, standard padlock, and scrambled padlock. The goal is to compare authentication 
+approaches that reduce exposure without making the task too slow or hard to learn.
 
 \vspace{1cm}
 \textbf{Keywords:} authentication, PIN, usability, shoulder surfing, security.
@@ -133,6 +142,7 @@ The resulting prototype, \textit{Vaulted Pass™}, includes four PIN-entry varia
 \newpage
 \doublespacing
 \tableofcontents
+\newpage
 \listoffigures
 \doublespacing
 
@@ -149,7 +159,7 @@ teclado embaralhado, cadeado padrão e cadeado embaralhado. O objetivo é compar
 sem tornar a tarefa demasiado lenta ou difícil de aprender.
 
 \section{Revisão Bibliográfica}
-Foram analisados dois trabalhos científicos diretamente relacionados com autenticação por PIN resistente a observação.
+Foram analisados três trabalhos científicos diretamente relacionados com autenticação por PIN resistente a observação.
 
 O primeiro artigo, \textit{A PIN-entry method resilient against shoulder surfing}, de Roth, Richter e Freidinger, propõe métodos alternativos 
 de entrada de PIN baseados em \textit{cognitive trapdoor games} (\cite{roth2004pin}). A ideia central é dificultar a captura do PIN mesmo 
@@ -208,6 +218,18 @@ Em termos de contexto, o nível de escolaridade e a formação em informática v
 de conhecimento técnico prévio. Se fosse possível contactar utilizadores e organizações, seria importante recolher dados sobre 
 frequência de utilização do telemóvel, experiências anteriores com métodos de autenticação, dificuldades de acessibilidade, tempo 
 aceitável para desbloqueio e perceção real de risco em espaços públicos.
+
+Caso fosse possível estabelecer um contacto direto e formal com os utilizadores, a recolha de informação detalhada 
+seria estruturada através de uma abordagem mista. Em primeiro lugar, seria aplicado um \textit{inquérito por questionário} 
+digital (Microsoft Forms), focado em mapear quantitativamente a perceção de risco de \textit{shoulder surfing} considerando a 
+opinião dos utilizadores.
+
+Em segundo lugar, para obter dados qualitativos e contextuais profundos, seriam realizadas 
+\textit{entrevistas semiestruturadas} com amostras de utilizadores das três faixas etárias 
+identificadas, permitindo explorar as suas reais dificuldades de acessibilidade com tecnologia móvel. 
+Por fim, planear-se-ia uma \textit{observação direta de campo} (estudo etnográfico discreto) em locais 
+de grande afluência da cidade de Beja, como paragens de autocarro e cafés, para registar os comportamentos 
+espontâneos de ocultação física do ecrã que os utilizadores adotam no seu quotidiano.
 
 \newpage
 \subsection{Cenários de Utilização}
@@ -304,7 +326,11 @@ Em caso de erro no PIN, o utilizador permanece no ecrã de autenticação e pode
 
 Esta navegação simples reduz a carga de aprendizagem e evita que o utilizador tenha de memorizar caminhos complexos entre ecrãs. Como o objetivo do 
 projeto é avaliar o método de entrada do PIN e não a exploração da aplicação, a estrutura de navegação foi mantida intencionalmente curta.
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.40\linewidth]{Recursos/diagramanavegacao.png}
+    \caption{Diagrama de navegação do protótipo.}
+\end{figure}
 \subsection{Princípios e Regras de Usabilidade}
 Foram aplicados vários princípios de usabilidade considerados centrais neste projeto:
 \begin{itemize}
@@ -319,6 +345,25 @@ Foram aplicados vários princípios de usabilidade considerados centrais neste p
 
 Além destes princípios, o desenho procurou respeitar a legibilidade e a robustez da interação em ecrãs pequenos, privilegiando controlos grandes 
 e um contraste visual suficiente para uso em contexto móvel.
+
+\subsection{Avaliação Exploratória do Protótipo Não Funcional}
+Foi pedido a três possíveis utilizadores que interagissem com o protótipo 
+de média fidelidade, sem instruções detalhadas, para observar a sua capacidade de 
+compreender a lógica. Foi apenas pedido para que escolhessem aquela 
+variante que considerassem a mais segura e mais eficiente. A variante mais votada 
+foi a de teclado embaralhado, seguida da variante em forma de cadeado.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\linewidth]{Recursos/naofuncional.png}
+    \caption{Avaliação do protótipo não funcional.}
+\end{figure}
+
+Os utilizadores mencionam que ao manter a familiaridade com o teclado padrão, mas aumentando 
+a segurança com o embaralhamento, impedindo que mesmo que se vejam os movimentos da mão, 
+não se consegue replicar a sequência noutra sessão. A variante em forma de cadeado foi 
+considerada interessante também, por ser mais confusa para um observador e fará com isso 
+seja mais difícil de memorizar a sequência.
 
 \newpage
 \section{Implementação e Avaliação do Protótipo}
@@ -342,15 +387,15 @@ segurança. Esses dados permitirão discutir se o aumento de proteção justific
 
 \newpage
 \section{Testes com Utilizadores}
-Foram realizados testes com um grupo de 10 utilizadores, com idades entre 22 e 30 anos, todos com alguma experiência em smartphones. Para 
-cada participante foi explicado previamente o objetivo do teste e foi fornecido o guião de tarefas. Cada utilizador experimentou as quatro variantes 
-do protótipo, e foram registados o tempo de execução, o número de erros e a preferência subjetiva.
+Foram realizados testes com um grupo de 6 utilizadores, com idades entre 22 e 57 anos, todos com alguma experiência em smartphones. Para 
+cada participante foi explicado previamente o objetivo do teste e foi fornecido o guião de tarefas. 
+Cada utilizador experimentou as quatro variantes do protótipo, e foram registados o tempo de execução, o número de erros e a preferência subjetiva.
 
 
 \begin{table}[H]
 \centering
-% Opcional: Reduz ligeiramente o espaço entre colunas para garantir que cabe perfeitamente na página
-\setlength{\tabcolsep}{5pt} 
+\setlength{\tabcolsep}{4pt} % Ajuste fino para caber na página
+\small
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
 \textbf{Utilizador} & 
@@ -365,22 +410,75 @@ do protótipo, e foram registados o tempo de execução, o número de erros e a 
 \hline
 Utilizador J & 4.23 & 0 & 3.55 & 0 & 7.63 & 2 & 9.61 & 0 \\
 Utilizador H & 3.22 & 0 & 4.47 & 0 & 5.96 & 2 & 6.49 & 1 \\
-Utilizador T & 3.42 & 0 & 5.31 & 0 & 7.61 & 0 & 5.79 & 0 \\
+Utilizador M & 3.42 & 0 & 5.31 & 0 & 7.61 & 0 & 5.79 & 0 \\
 Utilizador S & 1.26 & 0 & 2.28 & 0  & 8.51 & 0 & 9.20 & 0 \\
-Utilizador 5 &  &  &  &  &  &  &  &  \\
+Utilizador T & 2.58 & 0 & 2.45 & 0 & 4.20 & 0 & 7.34 & 1 \\
+Utilizador P & 3.64 & 0 & 6.19 & 0 & 42.22 & 9 & 32.53 & 36 \\
 \hline
-\textbf{Média} &   &   &   &   &   &   &   &   \\
+\hline
+\textbf{Média} & 2.89 & 0.00 & 4.04 & 0.00 & 12.69 & 2.17 & 11.83 & 6.33 \\
+\textbf{Mediana} & 3.32 & 0.00 & 4.01 & 0.00 & 7.62 & 1.00 & 8.27 & 0.50 \\
+\textbf{Desvio Padrão ($\sigma$)} & 1.07 & 0.00 & 1.54 & 0.00 & 14.53 & 3.43 & 10.25 & 14.54 \\
 \hline
 \end{tabular}
-\caption{Resultados dos testes com utilizadores.}
+\caption{Resultados expandidos dos testes com utilizadores ($N=6$).}
+\label{tab:resultados_testes}
 \end{table}
+
+A análise dos dados estatísticos descritivos da Tabela~\ref{tab:resultados_testes} revela um fenómeno 
+crítico no domínio da Interação Pessoa-Computador: o impacto de \textit{outliers} em amostras pequenas ($N=6$).
+
+O \textbf{Teclado Padrão (TP)} apresentou a menor média de tempo ($2.89$\,s) e elevada consistência ($\sigma = 1.07$\,s), 
+justificável pela familiaridade universal com o método. O \textbf{Teclado Embaralhado (TEmb)} demonstrou um acréscimo 
+marginal no tempo médio ($4.04$\,s) com desvio padrão reduzido ($\sigma = 1.54$\,s) e taxa nula de erros, validando-se 
+como uma alternativa altamente usável e previsível.
+
+O cenário altera-se drasticamente nas variantes de cadeado. A média de tempo do \textbf{Cadeado Estático (CEst)} 
+disparou para $12.69$\,s com um desvio padrão massivo de $14.53$\,s. Esta distorção é provocada inteiramente 
+pelo desempenho do \textbf{Utilizador P}, que registou $42.22$\,s e 9 erros em CEst, escalando para $32.53$\,s 
+e $36$ erros no \textbf{Cadeado Embaralhado (CEmb)}. 
+
+Ao analisarmos a \textbf{Mediana}, que mitiga o efeito destes valores extremos, percebe-se que o 
+desempenho típico do utilizador no Cadeado Estático ($7.62$\,s) e Cadeado Embaralhado ($8.27$\,s) é 
+substancialmente mais baixo do que a média aritmética sugere. O colapso na usabilidade sofrido pelo Utilizador 
+P (perfil sénior, com menor literacia digital) evidencia que os mecanismos rotativos geram uma carga 
+cognitiva excessiva para determinados nichos de utilizadores, gerando ciclos repetitivos de erro-correção.
+
 
 
 Os utilizadores demonstraram uma preferência clara sobre o teclado embaralhado, e o maior consenso foi 
 que a variante em forma de cadeado, embora interessante como solução, exigia mais tempo e esse tempo extra podia 
 ser um fator que poderia facilitar a observação do PIN e posteriormente a sua memorização. Os utilizadores 
 mencionam que apesar de a variante de teclado embaralhado não permitir movimentos memorizados, 
-o seu tempo de execução é mais rápido e dificulta a observação do PIN. 
+o seu tempo de execução é mais rápido e dificulta a observação do PIN.  Alguns utilizadores ainda mencionaram 
+que por questão de conveniência, preferem ainda o teclado padrão, mas que a variante de teclado embaralhado é a 
+que oferece maior segurança e que deveria ser incentivada para utilização. As variantes em forma de cadeado, apesar 
+de interessantes devido à pouca familiaridade com o método, foram consideradas mais ineficientes e menos agradáveis 
+de utilizar. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Recursos/Resultados.png}
+    \caption{Resultados dos testes com utilizadores.}
+\end{figure}
+
+Por fim, após a análise dos resultados, conclui-se que a variante de teclado embaralhado, é aquela que 
+oferece o melhor equilíbrio entre segurança e usabilidade, sendo a mais recomendada para utilização em 
+contextos onde a proteção do PIN é uma prioridade. 
+\newpage
+Originalmente, foi considerada a seguinte ordem 
+em termos de segurança: \textit{Cadeado Embaralhado}> \textit{Teclado Embaralhado}  > \textit{Cadeado Estático} 
+> \textit{Teclado Padrão}. Isto deve-se ao facto de considerar inicialmente que quanto mais a familiaridade 
+dos observadores com o método, mais fácil seria para eles memorizarem o PIN. No entanto, os resultados obtidos 
+através de conversas com os utilizadores e os próprios utilizadores a testar, demonstram que a variante de teclado embaralhado é a que oferece maior segurança,
+seguida do cadeado embaralhado, depois o cadeado estático e por último o teclado padrão. Isto deve-se ao facto de a 
+variante de teclado embaralhado, é um pouco mais familiar para os utilizadores, mas faz com que os observadores não consigam 
+memorizar o PIN devido à constante mudança da posição dos números, enquanto que a variante de cadeado embaralhado, 
+apesar de seguir a mesma lógica, é menos familiar para os utilizadores, o que faz com que o tempo de execução seja 
+maior e consequentemente aumenta a possibilidade de observação do PIN e a sua memorização. 
+
+Os resultados e os testes de utilizador podem ser vistos no na pasta \textit{Anexos}, onde se 
+encontra o ficheiro \textit{Pós-Teste da Vaulted Pass.xlsx}, com a pasta \textit{Vídeos} com os vídeos de 
+cada utilizador a realizar os testes, e por fim o ficheiro onde cada utilizador informa o seu consentimento.
 
 \newpage
 \section{Conclusão}\label{conclusao}
@@ -388,12 +486,14 @@ O trabalho consolidou uma abordagem de autenticação por PIN centrada na resist
 de interação. A revisão bibliográfica mostrou que existem soluções eficazes para reduzir o risco de \textit{shoulder surfing} sem sacrificar 
 totalmente a usabilidade, e o protótipo desenvolvido materializa esses princípios em quatro variantes distintas.
 
-Do ponto de vista do desenho, a principal conclusão é que segurança e usabilidade não são objetivos incompatíveis, mas exigem compromissos visíveis 
-na interface. O protótipo permite agora avançar para uma avaliação com utilizadores, onde será possível confirmar qual das variantes oferece o melhor 
-equilíbrio entre rapidez, memorização e proteção.
+
+Do ponto de vista do desenho, a principal conclusão é que segurança e usabilidade não são objetivos incompatíveis, 
+mas exigem compromissos visíveis na interface. Através da avaliação estatística e qualitativa realizada com os 
+utilizadores, confirmou-se que a variante de teclado embaralhado oferece o melhor equilíbrio prático, 
+mitigando o risco de \textit{shoulder surfing} sem penalizar severamente a eficiência e a carga cognitiva do utilizador comum.
 
 \nocite{roth2004pin,rotary2009}
-
+\newpage
 \vspace{2cm}
 \renewcommand{\refname}{Bibliografia}
 \renewcommand{\bibname}{Bibliografia}
